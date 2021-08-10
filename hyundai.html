@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="fullpage.css">
+	<link rel="stylesheet" href="styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<nav><a href="index.html" class='btn'>back to stories</a></nav>
+	<div class="scroll-nav">
+		<button id="move-up">^</button>
+		<button id="move-down">V</button>
+	</div>
+	<div id="fullpage">
+		<section class="section active" id="section0">
+			<h1>fullPage.js</h1>
+		</section>
+		<section class="section full" id="section1">
+		   <img src="assets/1.jpg">
+		   <div class="center-block">Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor. Donec ullamcorper nulla non metus auctor fringilla. Aenean lacinia bibendum nulla sed consectetur.</div>
+		</section>
+		<section class="section" id="section2"><div class="half-block"><h1>No wraps, no extra markup</h1></div><div class="half-block"><img src="assets/1.jpg"></div></section>
+		<section class="section" id="section3"><h1>Just the simplest demo ever</h1></section>
+	</div>
+
+	<script src="fullpage.js"></script>
+	<script>
+		var myFullpage = new fullpage('#fullpage', {
+			navigation: true,
+        	navigationPosition: 'right',
+			// sectionsColor: ['#000', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
+		});
+		document.getElementById("move-up").addEventListener("click", function(){
+			fullpage_api.moveSectionDown();
+		})
+		</script>
+</body>
+</html>
