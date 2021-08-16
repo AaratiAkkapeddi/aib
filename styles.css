@@ -358,10 +358,12 @@ video.small, img.small{
 	vertical-align: middle;
 	width: 60%;
 	padding: 0 50px;
+	padding-left:25px;
 	display: inline-block;
 }
 .hp-small{
 	vertical-align: middle;
-	width: 30%;
+	width: calc(33% - 3.5vw);
+    margin-left: 3.5vw;
 	display: inline-block;
 }
