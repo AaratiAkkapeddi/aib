@@ -26,8 +26,8 @@
 
 	<!-- content -->
 	<div id="fullpage">
-		<section class="section active">
-			<video aria-describedby="video depicts an animation of a new kind of ambulance able to lift its wheels with multi-jointed legs in a rescue mission on rocky terrain" class="small nudge-top" data-autoplay muted loop>
+		<section class="section active full">
+			<video aria-describedby="video depicts an animation of a new kind of ambulance able to lift its wheels with multi-jointed legs in a rescue mission on rocky terrain" class="" data-autoplay muted loop>
 				<source src="assets/hyundai/ambulance.mp4" type="video/mp4">
 			</video>
 			<div class="tri-block bottom">Today’s off-road vehicles are a great choice for adventurous drivers taking on rough terrain. But there are still limits to where even the toughest vehicles can go. Places untouched by automobiles because of a steep or uneven landscape. 
@@ -116,8 +116,11 @@
 			</div>
 		</section>
 		<section class="section" >
-			<div class="half-block"><span class="caption">Swipe to rotate model</span><br>
-			<img class="interactive" id="lattice" src="assets/lattice/frame0.jpg"></div><div class="half-block">
+			<div class="half-block">
+			<img class="interactive" id="lattice" src="assets/lattice/frame0.jpg"><br>
+			 <input type="range" min="1" max="100" value="50" class="slider" id="lattice-slider" oninput="lattice(this.value)"><br>
+			 <span class="caption">Slide to rotate model</span><br>
+		    </div><div class="half-block">
 				<p>After a series of prototypes, tests, and revisions, the team arrived at the design you see here. The structure uses a minimum of material, organized to support strain where it’s needed most.
 					<br><br>
 				To remove as much weight as possible, normally solid sections are often replaced with honeycomb-like lattices of material. 

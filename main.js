@@ -2,6 +2,10 @@
 
 		let myFullpage = new fullpage('#fullpage', {
         	licenseKey:"B45A73FD-763445B2-B34E9BA0-383C6C4D",
+        	scrollbar:true,
+        	keyboardScrolling: true,
+			animateAnchor: true,
+			recordHistory: true,
         	afterLoad: function(origin, destination, direction){
         		let loadedSection = this;
         		//using index
@@ -37,20 +41,20 @@
 					
 				}
 		});
-		
+
 Number.prototype.map = function (in_min, in_max, out_min, out_max) {
   return (this - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }
 
 // fullpage_api.setAllowScrolling(false)
-	document.getElementById("lattice").addEventListener("mousemove", function( event ) {
-		let rect = document.getElementById("lattice").getBoundingClientRect();
-		let map = Math.floor(event.x.map(rect.left, rect.right, 0, 98));
+ function lattice( num ) {
+		let value = parseInt(num)
+		let map = Math.floor(value.map(0, 100, 0, 98));
 		if (map >= 0 && map <= 98){
 			document.getElementById("lattice").src = "assets/lattice/frame" + map + ".jpg"
 		}
 		
-	})
+	}
 
 		document.getElementById("move-down").addEventListener("click", function(){
 			fullpage_api.moveSectionDown();
