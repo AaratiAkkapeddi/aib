@@ -188,10 +188,6 @@ a:link, a:active, a:focus, a:hover{
   100% { transform: scale(1); }
 }
 .scroll-nav{
-  -webkit-animation: pulse 0.4s ease-in-out 10s 2 forwards; /* Safari 4+ */
-  -moz-animation:    pulse 0.4s ease-in-out 10s 2 forwards; /* Fx 5+ */
-  -o-animation:      pulse 0.4s ease-in-out 10s 2 forwards; /* Opera 12+ */
-  animation:         pulse 0.4s ease-in-out 10s 2 forwards; /* IE 10+, Fx 29+ */
   transition:0.2s;
 }
 .scroll-nav:hover{

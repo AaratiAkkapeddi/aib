@@ -22,26 +22,27 @@
 					var leavingSection = this;
 
 					//after leaving section 2
-					if(origin.index == 3 && direction =='down' && !document.querySelector("#section3 .one").classList.contains("off")){
-						document.querySelector("#section3 .one").classList.add("off");
+					// if(origin.index == 3 && direction =='down' && !document.querySelector("#section3 .one").classList.contains("off")){
+					// 	document.querySelector("#section3 .one").classList.add("off");
 	
-						return false;
-					} 
+					// 	return false;
+					// } 
 
-					if(origin.index == 3 && direction =='up' && document.querySelector("#section3 .one").classList.contains("off")) {
-						document.querySelector("#section3 .one").classList.remove("off");
+					// if(origin.index == 3 && direction =='up' && document.querySelector("#section3 .one").classList.contains("off")) {
+					// 	document.querySelector("#section3 .one").classList.remove("off");
 
-						return false;
-					}
+					// 	return false;
+					// }
 
 					
 				}
 		});
+		
 Number.prototype.map = function (in_min, in_max, out_min, out_max) {
   return (this - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }
 
-fullpage_api.setAllowScrolling(false)
+// fullpage_api.setAllowScrolling(false)
 	document.getElementById("lattice").addEventListener("mousemove", function( event ) {
 		let rect = document.getElementById("lattice").getBoundingClientRect();
 		let map = Math.floor(event.x.map(rect.left, rect.right, 0, 98));
