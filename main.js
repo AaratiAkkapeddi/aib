@@ -6,9 +6,11 @@
         	keyboardScrolling: true,
 			animateAnchor: true,
 			recordHistory: true,
+			// autoScrolling: false,
         	afterLoad: function(origin, destination, direction){
         		let loadedSection = this;
         		//using index
+
         		let slides = document.getElementsByClassName("section");
 
 				if(destination.index == 0){
@@ -25,6 +27,7 @@
         	onLeave: function(origin, destination, direction){
 					var leavingSection = this;
 
+					
 					//after leaving section 2
 					// if(origin.index == 3 && direction =='down' && !document.querySelector("#section3 .one").classList.contains("off")){
 					// 	document.querySelector("#section3 .one").classList.add("off");
@@ -49,9 +52,23 @@ Number.prototype.map = function (in_min, in_max, out_min, out_max) {
 // fullpage_api.setAllowScrolling(false)
  function lattice( num ) {
 		let value = parseInt(num)
+		let map = Math.floor(value.map(0, 100, 1, 135));
+		if (map >= 0 && map <= 98){
+			document.getElementById("lattice").src = "assets/hyundai/leg_move/" + map + "f.jpg"
+		}
+		let map2 = Math.floor(value.map(0, 100, 1, 7));
+		if (map2 >= 1 && map2 <= 7){
+			document.getElementById("bones").src = "assets/hyundai/leg_bones/" + map2 + ".jpg"
+		}
+		
+	}
+
+// fullpage_api.setAllowScrolling(false)
+ function lattice2( num ) {
+		let value = parseInt(num)
 		let map = Math.floor(value.map(0, 100, 0, 98));
 		if (map >= 0 && map <= 98){
-			document.getElementById("lattice").src = "assets/lattice/frame" + map + ".jpg"
+			document.getElementById("lattice2").src = "assets/lattice/frame" + map + ".jpg"
 		}
 		
 	}
