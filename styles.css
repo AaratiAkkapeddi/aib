@@ -41,49 +41,49 @@
    block margin: 50px;
 */
 @-webkit-keyframes walk {
-  0%   { right:-300px;transform:scaleX(1); }
+  0%   { right:-20vw;transform:scaleX(1); }
    49% {transform:scaleX(1);}
   50%   { right:100vw;transform:scaleX(-1); }
   99% {transform:scaleX(-1);}
-  100% { right:-300px;transform:scaleX(1); }
+  100% { right:-20vw;transform:scaleX(1); }
 }
 @-moz-keyframes walk {
-  0%   { right:-300px;transform:scaleX(1); }
+  0%   { right:-20vw;transform:scaleX(1); }
    49% {transform:scaleX(1);}
   50%   { right:100vw;transform:scaleX(-1); }
   99% {transform:scaleX(-1);}
-  100% { right:-300px;transform:scaleX(1); }
+  100% { right:-20vw;transform:scaleX(1); }
 }
 @-o-keyframes walk {
-    0%   { right:-300px;transform:scaleX(1); }
+    0%   { right:-20vw;transform:scaleX(1); }
    49% {transform:scaleX(1);}
   50%   { right:100vw;transform:scaleX(-1); }
   99% {transform:scaleX(-1);}
-  100% { right:-300px;transform:scaleX(1); }
+  100% { right:-20vw;transform:scaleX(1); }
 }
 @keyframes walk {
-  0%   { right:-300px;transform:scaleX(1); }
+  0%   { right:-20vw;transform:scaleX(1); }
    49% {transform:scaleX(1);}
   50%   { right:100vw;transform:scaleX(-1); }
   99% {transform:scaleX(-1);}
-  100% { right:-300px;transform:scaleX(1); }
+  100% { right:-20vw;transform:scaleX(1); }
 }
 .animals img{
-	height: 140px;
+	height: 6vw;
 	display: inline-block;
 	z-index: 1;
 	pointer-events: none;
 	width: auto;
 	position: absolute;
 	bottom:0;
-	right: -300px;
+	right: -20vw;
 }
 .active .animals img:first-child{
-	animation: walk 30s linear 0s infinite;
+	animation: walk 30s linear 10s 0.5;
 }
 .active .animals img:last-child{
-	height:250px;
-	animation: walk 30s linear 5s infinite;
+	height:11vw;
+	animation: walk 30s linear 0s 0.5;
 }
 
 body{
@@ -593,6 +593,9 @@ section.active .slide-up.slower{
 .half-block{
 	position:relative;
 }
+.half-block p{
+	padding-right: 5vw;
+}
 #lattice-slider2{
 	z-index: 2;
 	position: absolute;
@@ -600,9 +603,9 @@ section.active .slide-up.slower{
 	right:0;
 	top:0;
 	transform-origin: right;
-    transform: translateY(35vh) rotate(90deg);
+    transform: translateY(-5vh) rotate(-90deg);
 }
-#lattice2{
+#lattice3{
 	margin-right: 50px;
     width: calc(100% - 50px);
 }

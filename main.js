@@ -52,9 +52,9 @@ Number.prototype.map = function (in_min, in_max, out_min, out_max) {
 // fullpage_api.setAllowScrolling(false)
  function lattice( num ) {
 		let value = parseInt(num)
-		let map = Math.floor(value.map(0, 100, 1, 135));
-		if (map >= 0 && map <= 98){
-			document.getElementById("lattice").src = "assets/hyundai/leg_move/" + map + "f.jpg"
+		let map = Math.floor(value.map(0, 100, 1, 68));
+		if (map >= 0 && map <= 68){
+			document.getElementById("lattice").src = "assets/hyundai/leg_move/" + map + ".jpg"
 		}
 		let map2 = Math.floor(value.map(0, 100, 1, 27));
 		if (map2 >= 1 && map2 <= 27){
@@ -66,9 +66,17 @@ Number.prototype.map = function (in_min, in_max, out_min, out_max) {
 // fullpage_api.setAllowScrolling(false)
  function lattice2( num ) {
 		let value = parseInt(num)
-		let map = Math.floor(value.map(0, 100, 0, 98));
-		if (map >= 0 && map <= 98){
-			document.getElementById("lattice2").src = "assets/lattice/frame" + map + ".jpg"
+		let map = Math.floor(value.map(0, 100, 1, 50));
+		if (map >= 1 && map <= 50){
+			document.getElementById("lattice2").src = "assets/hyundai/lattice/new/f" + map + ".jpg"
+		}
+		
+	}
+ function lattice3( num ) {
+		let value = parseInt(num)
+		let map = Math.floor(value.map(0, 100, 1, 93));
+		if (map >= 1 && map <= 93){
+			document.getElementById("lattice3").src = "assets/hyundai/explode/f" + map + ".jpg"
 		}
 		
 	}
