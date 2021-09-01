@@ -19,6 +19,14 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'NeueHaasGroteskText light';
+    src: 
+        url('fonts/NHaasGroteskDSPro-35XLt.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
 
 @font-face {
     font-family: 'NeueHaasGroteskText Roman';
@@ -89,12 +97,12 @@
 body{
 	position: relative;
 	margin:0;
-	letter-spacing: 0.05em;
+	letter-spacing: 0.06em;
 	line-height: 1.2;
 	font-family: 'NeueHaasGroteskText Roman', sans-serif;
 	background: black;
 	color:white;
-	font-size:1.2vw;
+	font-size:1.4vw;
 }
 p{
 	margin:0;
