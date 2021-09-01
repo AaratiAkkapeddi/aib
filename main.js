@@ -56,9 +56,9 @@ Number.prototype.map = function (in_min, in_max, out_min, out_max) {
 		if (map >= 0 && map <= 68){
 			document.getElementById("lattice").src = "assets/hyundai/leg_move/" + map + ".jpg"
 		}
-		let map2 = Math.floor(value.map(0, 100, 1, 27));
-		if (map2 >= 1 && map2 <= 27){
-			document.getElementById("bones").src = "assets/hyundai/leg_bones/hind/" + map2 + ".png"
+		let map2 = Math.floor(value.map(0, 100, 1, 68));
+		if (map2 >= 1 && map2 <= 68){
+			document.getElementById("bones").src = "assets/hyundai/leg_bones/human/" + map2 + ".jpg"
 		}
 		
 	}
