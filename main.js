@@ -6,7 +6,7 @@
         	keyboardScrolling: true,
 			animateAnchor: true,
 			recordHistory: true,
-			// autoScrolling: false,
+			autoScrolling: true,
         	afterLoad: function(origin, destination, direction){
         		let loadedSection = this;
         		//using index
@@ -56,9 +56,9 @@ Number.prototype.map = function (in_min, in_max, out_min, out_max) {
 		if (map >= 0 && map <= 98){
 			document.getElementById("lattice").src = "assets/hyundai/leg_move/" + map + "f.jpg"
 		}
-		let map2 = Math.floor(value.map(0, 100, 1, 7));
-		if (map2 >= 1 && map2 <= 7){
-			document.getElementById("bones").src = "assets/hyundai/leg_bones/" + map2 + ".jpg"
+		let map2 = Math.floor(value.map(0, 100, 1, 27));
+		if (map2 >= 1 && map2 <= 27){
+			document.getElementById("bones").src = "assets/hyundai/leg_bones/hind/" + map2 + ".png"
 		}
 		
 	}

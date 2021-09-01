@@ -79,10 +79,11 @@
 	right: -300px;
 }
 .active .animals img:first-child{
-	animation: walk 50s ease-in-out 0s infinite;
+	animation: walk 30s linear 0s infinite;
 }
 .active .animals img:last-child{
-	animation: walk 30s ease-in-out 5s infinite;
+	height:250px;
+	animation: walk 30s linear 5s infinite;
 }
 
 body{
@@ -102,10 +103,10 @@ p{
 h2{
 	font-size:1.4vw;
 	color: white;
+	text-transform: uppercase;
 }
 h1,h2,h3,h4,h5,h6{
 	margin:0;
-	text-transform: uppercase;
 	font-weight: normal;
 	font-family: 'NeueHaasGroteskText Pro';
 }
@@ -383,13 +384,17 @@ video.small, img.small{
 }
 .tri-block.bottom{
 	top:auto;
-	bottom:100px;
+	bottom:29vh;
 	right:150px;
 	left:auto;
 }
 #section1 .tri-block.bottom{
 	right:0;
 	bottom:29vh;
+	text-transform: none;
+}
+#section1 .tri-block.bottom h1{
+	text-transform: none;
 }
 .diagram{
 	display: block;
@@ -555,13 +560,13 @@ video.small, img.small{
 }
 
 section.active .fade-in{
-   animation: fadeIn 2s ease-in-out 0s forwards;
+   animation: fadeIn 3s ease-in-out 0.2s forwards;
 }
 section.active .fade-in.slow{
-	animation: fadeIn 2s ease-in-out 1s forwards;
+	animation: fadeIn 3s ease-in-out 1s forwards;
 }
 section.active .fade-in.slower{
-	animation: fadeIn 2s ease-in-out 2s forwards;
+	animation: fadeIn 3s ease-in-out 2s forwards;
 }
 .fade-in{
 	transition:2s;
@@ -581,7 +586,7 @@ section.active .slide-up.slower{
 .slide-up{
 	transition:2s;
 	opacity:0;
-	animation: slideDown 0.7s ease-in-out 0s forwards;
+	animation: slideDown 1s ease-in-out 0s forwards;
 }
 /* END EFFECTs */
 
