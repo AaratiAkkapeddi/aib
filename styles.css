@@ -566,7 +566,9 @@ video.small, img.small{
   20% {opacity:0;}
   100% { transform: translateY(100px);opacity:0;  }
 }
-
+#behind-text{
+	z-index: -1;
+}
 section.active .fade-in{
    animation: fadeIn 3s ease-in-out 0.2s forwards;
 }
