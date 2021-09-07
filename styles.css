@@ -1,6 +1,14 @@
 /* PURPLE: #9775E1 */
 /* PURPLE SHADOW: #7A55CB */
-
+.bg{
+	top:0;
+	left:0;
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background-position:center center;
+	backgrouund-size:cover;
+}
 
 @font-face {
     font-family: 'NeueHaasGroteskText Pro Md';
@@ -415,6 +423,41 @@ video.small, img.small{
 	position:fixed;
 	bottom:50px;
 	right:70px;
+}
+.flex-block{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.flex-block div{
+	display: inline-block;
+	width: 45%;
+}
+#section5 .flex-block, #section5 .flex-block div{
+	vertical-align: bottom;
+}
+#section5 .flex-block > div:first-child, #section5 .flex-block > div:nth-child(2){
+	width: 15vw;
+	height:auto;
+	vertical-align: bottom;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+#section6 .flex-block{
+	bottom:15vh;
+	left:0;
+	position: absolute;
+	width: calc(100% - 50px);
+}
+/*#section5 .flex-block img{
+	width: 25vw;
+	width:auto;
+}*/
+.flex-block video, .flex-block img{
+/*	width: auto;
+	width: 45%;
+	display: inline-block;*/
 }
 .center-block{
 	padding:25px;
