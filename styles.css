@@ -84,6 +84,7 @@
   99% {transform:scaleX(-1);}
   100% { right:-20vw;transform:scaleX(1); }
 }
+
 .animals img{
 	height: 6vw;
 	display: inline-block;
@@ -447,6 +448,22 @@ nav svg, .scroll-nav{
 	bottom:50px;
 	right:70px;
 }
+
+#section7 .flex-block div:first-child{
+	width: 60%;
+}
+#section7 .tri-block.bottom{
+	bottom:1vh;
+	left:5vw;
+	right:0;
+}
+#section7 .flex-block div{
+	vertical-align: top;
+align-self: top;
+}
+#section7 .flex-block div:last-child{
+	width: 30%;
+}
 .flex-block{
 	display: flex;
 	flex-direction: row;
@@ -478,10 +495,21 @@ nav svg, .scroll-nav{
 }
 
 #section6 .flex-block{
-	bottom:15vh;
+	bottom:10vh;
 	left:0;
 	position: absolute;
 	width: calc(100% - 50px);
+}
+#section4 .half-block{
+	vertical-align: bottom;
+}
+#section5 .flex-block{
+	position:relative;
+	bottom:-10vh;
+}
+.tri-block.left{
+ right: auto;
+ left:5vw;
 }
 /*#section5 .flex-block img{
 	width: 25vw;
