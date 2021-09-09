@@ -187,7 +187,7 @@ input[type="range"]::-webkit-slider-thumb {
   top:-0.05vw;
   position: relative;
   background: #fff;
-  border: 0.05vw solid #000;
+  border: 0vw solid #000;
   cursor: pointer;
   border-radius:0.2vw;
   outline:none;

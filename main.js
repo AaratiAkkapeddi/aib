@@ -74,8 +74,8 @@ Number.prototype.map = function (in_min, in_max, out_min, out_max) {
 	}
  function lattice3( num ) {
 		let value = parseInt(num)
-		let map = Math.floor(value.map(0, 100, 1, 93));
-		if (map >= 1 && map <= 93){
+		let map = Math.floor(value.map(0, 100, 31, 93));
+		if (map >= 31 && map <= 93){
 			document.getElementById("lattice3").src = "assets/hyundai/explode/f" + map + ".jpg"
 		}
 		
