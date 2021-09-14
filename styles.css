@@ -342,6 +342,11 @@ nav a svg{
 
 	
 }
+video.top{
+	position: relative;
+	top:-10vh;
+
+}
 video.full{
 	position: absolute;
 	left:0;
@@ -424,7 +429,7 @@ nav svg, .scroll-nav{
 }
 .tri-block.bottom{
 	top:auto;
-	bottom:29vh;
+	bottom:20vh;
 	right:150px;
 	left:auto;
 }
@@ -448,13 +453,16 @@ nav svg, .scroll-nav{
 	bottom:50px;
 	right:70px;
 }
-
+#section2 .half-block p{
+	padding:30px;
+	background: rgba(0,0,0,0.8);
+}
 #section7 .flex-block div:first-child{
-	width: 60%;
+	width: 65%;
 }
 #section7 .tri-block.bottom{
-	bottom:1vh;
-	left:5vw;
+	bottom:8vh;
+	left:25vw;
 	right:0;
 }
 #section7 .flex-block div{
@@ -462,7 +470,7 @@ nav svg, .scroll-nav{
 align-self: top;
 }
 #section7 .flex-block div:last-child{
-	width: 30%;
+	width: 28%;
 }
 .flex-block{
 	display: flex;
@@ -476,13 +484,38 @@ align-self: top;
 #section5 .flex-block, #section5 .flex-block div{
 	vertical-align: bottom;
 }
-#section5 .flex-block > div:first-child, #section5 .flex-block > div:nth-child(2){
-	width: 15vw;
+#section5 .flex-block > div:nth-child(2){
+	width: 35vw;
+	padding-right:5vw;
 	height:auto;
 	vertical-align: bottom;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
+	text-align:center;
+}
+#section5 .flex-block > div:nth-child(2) img{
+	width: 70%;
+	display: block;
+    margin: 0 auto;
+}
+#section5 .flex-block > div:nth-child(2){
+	text-align:center;
+}
+#section5 .flex-block > div:nth-child(2) span{
+	margin-bottom:2em;
+
+}
+#section5 .flex-block > div:nth-child(2) p{
+	text-align: left;
+}
+#section5 .flex-block > div:first-child{
+	width: 65vw;
+	height:auto;
+	vertical-align: bottom;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	text-align:center;
 }
 #section5 .flex-block > div:first-child span, #section5 .flex-block > div:nth-child(2) span{
@@ -493,19 +526,22 @@ align-self: top;
 	display: block;
 	margin-top:1vw;
 }
-
-#section6 .flex-block{
-	bottom:10vh;
-	left:0;
+#section6 .slide-up{
+	width: 60%;
+	bottom:15vh;
 	position: absolute;
-	width: calc(100% - 50px);
+}
+#section6 .flex-block{
+	position: relative;
+	width: calc(100%);
+	top:-10vh;
 }
 #section4 .half-block{
 	vertical-align: bottom;
 }
 #section5 .flex-block{
 	position:relative;
-	bottom:-10vh;
+	bottom:0vh;
 }
 .tri-block.left{
  right: auto;
@@ -538,7 +574,7 @@ align-self: top;
 	width: calc(100% - 50px);
 	margin-left:50px;
 	margin-bottom:10px;
-	background-size:120%;
+	background-size:100%;
 	background-position:center center;
 }
 .hp-large:nth-child(7) .hp-img{
@@ -561,16 +597,29 @@ align-self: top;
     margin-left: 3.5vw;
 	display: inline-block;
 }
-
-
-.i1, .i2, .i3{
+#section2{
+	background: url('assets/hyundai/post_it.jpg');
+	background-size:cover;
+}
+/*
+.ibg{
 	position:absolute;
-	max-width: 33%;
+	left:0;
+	top:0;
+	opacity: 0.7;
 	z-index: -1;
+	height: auto;
+}*/
+
+.i1, .i2, .i3, .i4{
+	position:absolute;
+	max-width: 28%;
+	z-index: 0;
 }
 
 .i1{
 	top:20px;
+	left:1%;
 }
 .i2{
 	top:30vh;
@@ -578,7 +627,11 @@ align-self: top;
 }
 .i3{
 	bottom:20px;
-	left:15%;
+	left:8%;
+}
+.i4{
+	bottom:-10vh;
+	right:20%;
 }
 .long1{
 	position: absolute;
@@ -682,13 +735,21 @@ section.active .fade-in.slow{
 section.active .fade-in.slower{
 	animation: fadeIn 3s ease-in-out 2s forwards;
 }
+section.active .slowest{
+	animation: fadeIn 3s ease-in-out 3s forwards;
+}
+section.active .slowestest{
+	animation: fadeIn 3s ease-in-out 4s forwards;
+}
 .fade-in{
 	transition:2s;
 	opacity:0;
 	animation: fadeOut 2s ease-in-out 0s forwards;
 }
 
+
 section.active .slide-up{
+
    animation: slideUp 0.7s ease-in-out 0s forwards;
 }
 section.active .slide-up.slow{
