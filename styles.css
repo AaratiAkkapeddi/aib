@@ -536,8 +536,11 @@ align-self: top;
 	width: calc(100%);
 	top:-10vh;
 }
+#section4 .diagram{
+	width: 80%;
+}
 #section4 .half-block{
-	vertical-align: bottom;
+	vertical-align: top;
 }
 #section5 .flex-block{
 	position:relative;
