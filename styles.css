@@ -111,14 +111,14 @@ body{
 	font-family: 'NeueHaasGroteskText Roman', sans-serif;
 	background: black;
 	color:white;
-	font-size:1.4vw;
+	font-size:1.3vw;
 }
 p{
 	margin:0;
 }
 
 h2{
-	font-size:1.4vw;
+	font-size:1.3vw;
 	color: white;
 	text-transform: uppercase;
 }
@@ -299,7 +299,7 @@ nav a svg{
 	text-decoration:none;
 	background: black;
 	border-radius: 0vw;
-	font-size: 1.4vw;
+	font-size: 1.3vw;
 	position: relative;
 	font-family: 'NeueHaasGroteskText Pro Md';
 	padding:10px 30px;
@@ -397,7 +397,7 @@ nav svg, .scroll-nav{
 	position:absolute;
 	top:50px;
 	left:100px;
-	width: 40%;
+	width: 30%;
 	z-index: 1;
 	background: rgba(0,0,0,0.7);
 }
@@ -475,7 +475,7 @@ align-self: top;
 .flex-block{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 .flex-block div{
 	display: inline-block;
@@ -527,8 +527,8 @@ align-self: top;
 	margin-top:1vw;
 }
 #section6 .slide-up{
-	width: 60%;
-	bottom:15vh;
+	width: 40%;
+	bottom:12vh;
 	position: absolute;
 }
 #section6 .flex-block{
