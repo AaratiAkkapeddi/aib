@@ -7,6 +7,10 @@
 	<title>Document</title>
 </head>
 <body class="hp">
+	<div id="loader">
+		<div class="spinner"><div></div><div></div><div></div><div></div></div>
+		<div class="caption">loading</div>
+	</div>
 	<section class="full">
 		<div class="hp-small">
 			<h1>Learn how designers collaborate with AI</h1>
@@ -32,7 +36,12 @@
 		</div>
 
 	</section>
-
+<script>
+	window.addEventListener("load", function(){
+	const loader = document.querySelector("#loader");
+	loader.classList.add("off");
+})
+</script>
 	
 </body>
 </html>

@@ -1,3 +1,5 @@
+
+
 		let showSecondP = false;
 
 		let myFullpage = new fullpage('#fullpage', {
@@ -5,6 +7,7 @@
         	scrollbar:true,
         	keyboardScrolling: true,
 			animateAnchor: true,
+			lazyLoading:false,
 			recordHistory: true,
 			autoScrolling: true,
         	afterLoad: function(origin, destination, direction){
@@ -81,10 +84,15 @@ Number.prototype.map = function (in_min, in_max, out_min, out_max) {
 		
 	}
 
-		document.getElementById("move-down").addEventListener("click", function(){
-			fullpage_api.moveSectionDown();
-			
-		})
-		document.getElementById("move-up").addEventListener("click", function(){
-			fullpage_api.moveSectionUp();
-		})
+document.getElementById("move-down").addEventListener("click", function(){
+	fullpage_api.moveSectionDown();
+	
+})
+document.getElementById("move-up").addEventListener("click", function(){
+	fullpage_api.moveSectionUp();
+})
+
+window.addEventListener("load", function(){
+	const loader = document.querySelector("#loader");
+	loader.classList.add("off");
+})
