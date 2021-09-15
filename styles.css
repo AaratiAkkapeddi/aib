@@ -344,7 +344,7 @@ nav a svg{
 }
 video.top{
 	position: relative;
-	top:-10vh;
+	top:-11vh;
 
 }
 video.full{
@@ -470,7 +470,7 @@ nav svg, .scroll-nav{
 align-self: top;
 }
 #section7 .flex-block div:last-child{
-	width: 28%;
+	width: 31.5%;
 }
 .flex-block{
 	display: flex;
@@ -528,13 +528,13 @@ align-self: top;
 }
 #section6 .slide-up{
 	width: 40%;
-	bottom:12vh;
+	bottom:11vh;
 	position: absolute;
 }
 #section6 .flex-block{
 	position: relative;
 	width: calc(100%);
-	top:-10vh;
+	top:-11vh;
 }
 #section4 .diagram{
 	width: 80%;
