@@ -410,6 +410,7 @@ nav svg, .scroll-nav{
 	display: block;
 	text-align:center;
 	font-size:1.2vw;
+	margin-top:15px;
 }
 .interactive{
 /*	border:0.1vw solid #FFF;*/
