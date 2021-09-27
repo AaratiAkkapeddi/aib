@@ -10,6 +10,7 @@
 			lazyLoading:false,
 			recordHistory: true,
 			autoScrolling: true,
+			touchSensitivity: 15,
         	afterLoad: function(origin, destination, direction){
         		let loadedSection = this;
         		//using index
