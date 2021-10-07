@@ -10,7 +10,7 @@
 			lazyLoading:false,
 			recordHistory: true,
 			autoScrolling: true,
-			touchSensitivity: 15,
+			touchSensitivity: 5,
         	afterLoad: function(origin, destination, direction){
         		let counter = document.getElementById("page").firstChild
         		counter.nodeValue = destination.index + 1;
