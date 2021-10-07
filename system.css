@@ -662,6 +662,13 @@ video.small, img.small{
 #counter{
 	font-size:1vw;
 }
+#crawl{
+	position: absolute;
+    z-index: 0;
+    width: 70%;
+    right: -10vw;
+    top: 10vw;
+}
 .diagram{
 	margin-top:1.04vw;
 	/*grid-column-start: 1;
@@ -670,6 +677,9 @@ video.small, img.small{
 }
 .diagram.right{
 	width:70%;
+	margin-left:auto;
+	margin-right:auto;
+	display: block;
 	/*grid-column-start: 8;
 	grid-column-end: span 4;
 	align-self: start;
