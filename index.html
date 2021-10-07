@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="system.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	
+	<link rel="stylesheet" href="flickity.min.css">
+
 </head>
 <body class="hp">
 	<div id="loader">
@@ -12,35 +15,50 @@
 		<div class="caption">loading</div>
 	</div>
 	<section class="full">
-		<div class="hp-small">
+		<div class="grid">
+
 			<h1>Learn how designers collaborate with AI</h1>
-		</div>
-		<div class="hp-large">
-			<div class="half-block">
-				<a href="hyundai.html" class="btn"> How can we combine a car and a robot? </a>
-			</div><div class="half-block">
-				<a href="hyundai.html"><div class="hp-img" style="background-image:url('assets/1.jpg');"></div></a>
-			</div><div class="half-block">
-				<a class="btn"> How can we look for life on other planets? </a>
-			</div><div class="half-block">
-				<a href="hyundai.html"><div class="hp-img" style="background-image:url('assets/3.jpg');"></div></a>
-			</div><div class="half-block">
-				<a class="btn"> How can we support our weight with a minimum of material and energy? </a>
-			</div><div class="half-block">
-				<a href="hyundai.html"><div class="hp-img" style="background-image:url('assets/starck.jpg');"></div></a>
-			</div><div class="half-block">
-				<a class="btn"> How did we collaborate with AI to design the pavillion? </a>
-			</div><div class="half-block">
-				<a href="hyundai.html"><div class="hp-img" style="background-image:url('assets/4.jpg');"></div></a>
+
+			<div class="main-carousel">
+				<div class="card hp-image" style="background-image:url('assets/1.jpg');">
+					<a href="hyundai.html" class="btn"> How can we combine a car and a robot? <div class='go-arrow'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 88"><defs><style>.cls-1{fill:#fff;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g id="Layer_2-2" data-name="Layer 2"><g id="Layer_1-2-2" data-name="Layer 1-2"><path class="cls-1" d="M.5,7.16,6.69,0,49,44.06,6.84,88,0,81.46,35.89,44.07Z"/></g></g></g></g></svg></div></a>
+					
+					
+				</div><div class="card hp-image" style="background-image:url('assets/3.jpg');">
+					<a class="btn"> How can we look for life on other planets? <div class='go-arrow'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 88"><defs><style>.cls-1{fill:#fff;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g id="Layer_2-2" data-name="Layer 2"><g id="Layer_1-2-2" data-name="Layer 1-2"><path class="cls-1" d="M.5,7.16,6.69,0,49,44.06,6.84,88,0,81.46,35.89,44.07Z"/></g></g></g></g></svg></div></a>
+		
+					
+				</div><div class="card hp-image" style="background-image:url('assets/starck.jpg');">
+					<a class="btn"> How can we support our weight with a minimum of material and energy? <div class='go-arrow'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 88"><defs><style>.cls-1{fill:#fff;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g id="Layer_2-2" data-name="Layer 2"><g id="Layer_1-2-2" data-name="Layer 1-2"><path class="cls-1" d="M.5,7.16,6.69,0,49,44.06,6.84,88,0,81.46,35.89,44.07Z"/></g></g></g></g></svg></div></a>
+
+					
+				</div><div class="card hp-image" style="background-image:url('assets/4.jpg');">
+					<a class="btn"> How did we collaborate with AI to design the pavillion? <div class='go-arrow'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 88"><defs><style>.cls-1{fill:#fff;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g id="Layer_2-2" data-name="Layer 2"><g id="Layer_1-2-2" data-name="Layer 1-2"><path class="cls-1" d="M.5,7.16,6.69,0,49,44.06,6.84,88,0,81.46,35.89,44.07Z"/></g></g></g></g></svg></div></a>
+		
+				
+				</div>
 			</div>
 		</div>
-
 	</section>
+
+<script src="flickity.pkgd.min.js"></script>
 <script>
 	window.addEventListener("load", function(){
 	const loader = document.querySelector("#loader");
 	loader.classList.add("off");
 })
+
+
+	var elem = document.querySelector('.main-carousel');
+var flkty = new Flickity( elem, {
+  // options
+  prevNextButtons: false,
+pageDots: false,
+  cellAlign: 'left',
+  contain: true
+});
+
+
 </script>
 	
 </body>

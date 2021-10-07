@@ -12,6 +12,8 @@
 			autoScrolling: true,
 			touchSensitivity: 15,
         	afterLoad: function(origin, destination, direction){
+        		let counter = document.getElementById("page").firstChild
+        		counter.nodeValue = destination.index + 1;
         		let loadedSection = this;
         		//using index
 

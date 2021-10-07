@@ -2,11 +2,122 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="fullpage.css">
 	<link rel="stylesheet" href="styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Starck</title>
 </head>
 <body>
-	
+	<div id="loader">
+		<div class="spinner"><div></div><div></div><div></div><div></div></div>
+		<div class="caption">loading</div>
+	</div>
+	<!-- Navigation -->
+<!-- 	<div class="nav-title">Current Story: How can we combine a car and a robot?</div> -->
+	<nav><a href="index.html" class=''><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 161.78 160.54"><defs><style>.cls-1{fill:#fff;stroke:#000;stroke-miterlimit:10;stroke-width:0vw;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M34.39,89.61a23.64,23.64,0,0,1,2.16,1.69l53.81,53.78c2.58,2.58,2.57,3,0,5.59s-5.18,4.94-7.6,7.57c-1.64,1.78-2.83,1.69-4.49,0C69.5,149.44,60.7,140.72,51.94,132L2.87,83c-2.5-2.49-2.49-2.64,0-5.15L77.45,3.15C80.3.3,80.39.29,83.18,3.07q3.63,3.6,7.23,7.23c2.28,2.29,2.27,2.7,0,5Q63.29,42.39,36.19,69.45a21.68,21.68,0,0,1-2.11,1.69l.35.7h122.1c4.15,0,4.24.09,4.24,4.17q0,4.72,0,9.47c0,3-.39,3.4-3.5,3.4H34.83Z"/></g></g></svg></a></nav>
+	<div class="scroll-nav">
+		<button id="move-up">
+			<!-- <svg width="87" height="47" viewBox="0 0 87 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M6 5.52246L44.8514 40.5935L81 5.52246" stroke="#FFF" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg> -->
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 159.54 92.29"><defs><style>.cls-1{fill:#fff;stroke:#020202;stroke-miterlimit:10;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M69,56.6q-27-27.1-54.12-54.17C12.5.1,12.09.1,9.8,2.38S5,7.19,2.57,9.61c-2.78,2.79-2.77,2.88.08,5.73L77.31,89.91c2.51,2.5,2.66,2.51,5.15,0l49-49.07c8.76-8.77,17.48-17.57,26.29-26.28,1.68-1.66,1.77-2.85,0-4.49-2.63-2.42-5.06-5.06-7.57-7.6s-3-2.63-5.59,0q-26.9,26.9-53.78,53.81L79.59,67.1Z"/></g></g></svg>
+		</button>
+		<button id="move-down">
+			<!-- <svg width="87" height="47" viewBox="0 0 87 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M6 5.52246L44.8514 40.5935L81 5.52246" stroke="#FFF" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg> -->
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 159.54 92.29"><defs><style>.cls-1{fill:#fff;stroke:#020202;stroke-miterlimit:10;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M69,56.6q-27-27.1-54.12-54.17C12.5.1,12.09.1,9.8,2.38S5,7.19,2.57,9.61c-2.78,2.79-2.77,2.88.08,5.73L77.31,89.91c2.51,2.5,2.66,2.51,5.15,0l49-49.07c8.76-8.77,17.48-17.57,26.29-26.28,1.68-1.66,1.77-2.85,0-4.49-2.63-2.42-5.06-5.06-7.57-7.6s-3-2.63-5.59,0q-26.9,26.9-53.78,53.81L79.59,67.1Z"/></g></g></svg>
+		</button>
+	</div>
+
+	<!-- content -->
+	<div id="fullpage">
+	<!-- 	<section id="section1" class="section active">
+			<img class="i1 fade-in" src="assets/hyundai/nyc.jpg">
+
+			<img class="i2 fade-in slow" src="assets/hyundai/snow.jpg">
+
+			<img class="i3 fade-in slower" src="assets/hyundai/rocks.jpg">
+
+			<div class="half-block"></div><div class="tri-block bottom slide-up"><h1>How can we combine a car and a robot?</h1> 
+			</div>
+
+		</section> -->
+
+		<section id="section1" class="section" >
+			<div class="instagram"></div>
+			<div class="tri-block bottom slide-up">In a career stretching over forty years, renowned designer Philippe Starck is responsible for some of the world's most iconic designs, including many of the most reproduced and celebrated chairs of our time.<br>
+			But how does a ddesigner with a reputation for challenging expectations continue to push against predictability?
+			</div>
+			
+		</section>
+        <section id="section2" class="section full fp-auto-height-responsive" >
+				<div class="bg" style="background-image:url(assets/hyundai/terrain1.jpg);" />
+				<div class="half-block slide-up fade-in slow">
+					<img src=""/>
+					<p>My organic brain cannot imagine what an artificial brain can do...<svg></svg></p>
+				</div>
+		</section>
+		<section id="section3" class="section full fp-auto-height-responsive" >
+			<div class="bg" style="background-image:url(assets/hyundai/terrain1.jpg);" />
+				<div class="half-block slide-up">
+					Design Challenge<br>
+					To get ouut of his comfort zone, Starck approahed a familiar problem with an unfamiliar tool.<br><br> He would design a chair using the least amount of material possible, using AI as his design partner.<br><br>
+					An AI that could provide a new perspective on what a chair could be. A design partner without aany of Starack's design bias or instincts, and no knowledge of humanity's 4600 year history with chairs.<br><br>
+					Starck sought to create something that could only be made at this point in time.<br><br>
+					A time shaped by algorithms and a concern for our environmental impact<br><br>
+					A moment where for the first time, human ingenuity alone may not be enough to rise to the challenges in front of us.
+				</div>
+		</section>
+
+		
+
+		<section id="section4" class="section" >
+			<div class="slide-up">
+				Design Goals & Constraints<br>
+				<ul>
+					<li>Body and Chair Contact</li>
+					<li>Position of Legs</li>
+					<li>Define the Forces</li>
+				</ul>
+			</div>
+			<div>How much weight must it support?</div>
+		</section>
+       
+	</div>
+	<section id="section5" class="section" >
+		
+	</section>
+	<section id="section6" class="section" >
+		
+	</section>
+	<section id="section7" class="section" >
+		
+	</section>
+	<section id="section8" class="section" >
+		
+	</section>
+	<section id="section9" class="section" >
+		
+	</section>
+	<section id="section10" class="section" >
+		
+	</section>
+	<section id="section11" class="section" >
+		
+	</section>
+	<section id="section12" class="section" >
+		
+	</section>
+	<section id="section13" class="section" >
+		
+	</section>
+
+
+</div>
+
+<!-- scroll behavior -->
+	<script src="fullpage.js"></script>
+	<script src="main.js"></script>
 </body>
 </html>
