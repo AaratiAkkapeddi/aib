@@ -78,6 +78,24 @@ Number.prototype.map = function (in_min, in_max, out_min, out_max) {
 		}
 		
 	}
+
+ function lattice4( num ) {
+		let value = parseInt(num)
+		let map = Math.floor(value.map(0, 100, 1, 119));
+		if (map >= 1 && map <= 119){
+			document.getElementById("lattice2").src = "assets/starck/fea/f" + map + ".jpg"
+		}
+		
+	}
+ function lattice5( num ) {
+		let value = parseInt(num)
+		let map = Math.floor(value.map(0, 100, 0, 65));
+		if (map >= 1 && map <= 65){
+			document.getElementById("lattice1").src = "assets/starck/rotate/frame" + map + ".jpg"
+		}
+		
+	}
+
  function lattice3( num ) {
 		let value = parseInt(num)
 		let map = Math.floor(value.map(0, 100, 31, 93));
