@@ -35,8 +35,9 @@
 	<div class="hyundai" id="fullpage">
 
 		<section id="section1" class="section full" >
-			<div class="bg" style="background-image:url(assets/hyundai/terrain1.jpg);" ></div>
-			<div class="grid">
+			<div class="bg" style="z-index:-1;position:absolute;background-image:url(assets/hyundai/terrain1.jpg);" ></div>
+			
+			<div class="grid"><h1 style="color:black;grid-column-start: 1; align-self: center;grid-column-end: span 12;">How can we combine a car and a robot?</h1>
 				<div class="text-block padding bottom-left slide-up"><!-- <h1>How can we combine a car and a robot?</h1> -->There are limits to where even the toughest off-road vehicles can go.<br><br>
 				Places with steep or uneven terrain where no conventional car could reach. 
 				</div>
@@ -48,10 +49,11 @@
 				<div class="bg opacity" style="background-image:url(assets/hyundai/post_it.jpg);" ></div>
 			
 				<div class="grid">
-					<img class="fade-in i4 slowestest " src="assets/hyundai/amb_walk.jpg">
+					
 					<img class="fade-in i1 slow " src="assets/hyundai/rocks.jpg">
 					<img class="fade-in i2 slower " src="assets/hyundai/snow.jpg">
 					<img class="fade-in i3 slowest " src="assets/hyundai/nyc.jpg">
+					<img class="fade-in i4 slowestest " src="assets/hyundai/amb_walk.jpg">
 					<div class="text-block padding bottom-left slide-up">
 						How do you make a vehicle that can move through places that are only accessible by foot?
 					</div>
@@ -59,7 +61,7 @@
 		</section>
 		<section id="section3" class="section full fp-auto-height-responsive" >
 				<!-- <img class="long1" src="assets/hyundai/snow.jpg"> -->
-			<video style="position: absolute;z-index: 0;" class="fade-in" aria-describedby="video depicts clips of designers at hyundai using software to prototype this vehicle" class="" data-autoplay muted>
+			<video style="position: absolute;z-index: 0;" class="fade-in" aria-describedby="video depicts clips of designers at hyundai using software to prototype this vehicle" class="" data-autoplay muted loop>
 				<source src="assets/hyundai/prototype0.mp4" type="video/mp4">
 			</video>
 			<div class="grid">
@@ -78,6 +80,7 @@
 	        		 As humans we take walking for granted.<br>
 				     From an engineering perspective, it’s a delicate coordination of joints, muscles, and reflexes that’s difficult to replicate mechanically.
 				     <img  class="diagram"  src='assets/hyundai/animal.png'>
+				 	 <div class="diagram-captions caption"><span>human</span><span>dog</span><span>horse</span></div>
 				 	</div>
 				 	
 				 	<div class="interactive-block">
@@ -108,13 +111,14 @@
 
 		<section id="section6" class="section" >
 			<div class="grid">
-				<video style="grid-column-start: 1;align-self:center;grid-column-end: span 11;" class="fade-in top" aria-describedby="video depicts elevate prototype transforming from erect mammalian walking mode to lower reptilian crawling mode" class="" data-autoplay muted loop>
+				<video style="grid-column-start: 1;align-self:end;grid-column-end: span 11;" class="fade-in top" aria-describedby="video depicts elevate prototype transforming from erect mammalian walking mode to lower reptilian crawling mode" class="" data-autoplay muted loop>
 				<source src="assets/hyundai/walk_cycle.mp4" type="video/mp4">
 			    </video>
-			    <span class="reptilian-span">Reptilian</span><span class="mammalian-span">Mammalian</span>
-			    <div class="text-block bottom-left slide-up">
+			    <span class="reptilian-span">Mammalian</span><span class="mammalian-span">Reptilian</span>
+			    <div style="grid-column-end: span 5;align-self: start;" class="text-block bottom-left slide-up">
 				Walking in mammalian mode provides additional height for clearing obstacles and a greater range of vertical leg motion, useful for climbing. 
-					<br><br>
+				</div>
+				 <div style="padding-left:1.04vw;grid-column-end: span 5;align-self: start;" class="text-block bottom-right slide-up">
 				By contrast, the wide gait of the reptilian walking mode provides increased stability and a lower center of gravity, ideal for uneven terrain.
 				</div>
 			</div>
@@ -138,7 +142,8 @@
 				    Without muscles, the movements of each leg depend on heavy, high-torque electric motors in each joint. 
 					Striking the right balance requires subtracting mass from the supports. Just like bones, these supports must be both strong and light. 
 				</div>
-				<img id='leg-callout' src="assets/hyundai/robotic_leg.jpg"/><span style="grid-column-start: 9;grid-column-end: span 2;align-self: start;" class="caption">robotic leg</span>
+				<span style="z-index:2;grid-column-start: 7;grid-column-end: span 5;align-self: start;" class="caption">Robot Leg Wheel Unit</span>
+				<img id='leg-callout' src="assets/hyundai/robotic_leg.jpg"/>
 			</div>
 	
 
@@ -151,10 +156,19 @@
 					 <input type="range" min="1" max="100" value="50" class="slider" id="lattice-slider" oninput="lattice2(this.value)">
 					 <span class="caption">Slide to rotate model</span>
 				</div>
-				<div class="text-block top-right slide-up">To reduce the weight of the leg while maximizing its strength, designers used AI-powered generative design tools to create, test, and evolve hundreds of potential designs in minutes. 
-				<br><br>In this case, the software generated these curved lattices of material following a mathematical algorithm called a Michell Truss.
-			<img class="diagram right" src="assets/hyundai/truss.jpg"><span class="caption">Michell Truss</span></div>
 				
+			<div style="grid-column-end: span 6;"><img style="width: 88%;display: block;margin: 0 auto;"  src="assets/hyundai/truss.jpg"><br><span style="position: relative; top:-3vw;" class="caption">Michell Truss</span></div>
+				
+				<div style="grid-column-end: span 6;align-self: start;" class="text-block bottom-left slide-up">
+				To reduce the weight of the leg while maximizing its strength, designers used AI-powered generative design tools to create, test, and evolve hundreds of potential designs in minutes.
+				</div>
+				 <div style="padding-left:1.04vw;grid-column-end: span 5;align-self: start;" class="text-block bottom-right slide-up">
+				In this case, the software generated these curved lattices of material following a mathematical algorithm called a Michell Truss.
+				</div>
+
+
+
+
 			</div>
 		
 		</section>
@@ -178,7 +192,7 @@
 					 <input type="range" min="1" max="100" value="3" class="slider" id="lattice-slider2" oninput="lattice3(this.value)">
 					 <span class="caption">Slide to expand model</span>
 				</div>
-				<div class="text-block top-right slide-up">
+				<div style="top: -2.5vw;" class="text-block top-right slide-up">
 					After a series of revisions, the team arrives at the design you see here. <br><br>The structure uses a minimum of material, organized to provide support where it’s needed most. <br><br>In many places, magnesium casting is used for the final pieces, offering the best balance of strength and weight.
 				</div>
 			</div>
