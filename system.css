@@ -45,10 +45,10 @@
 	grid-column-end: span 6;
 }
 #leg-callout{
-	grid-column-start: 7;
+	grid-column-start: 8;
 	align-self: start;
 	grid-row-start: 1;
-	grid-column-end: span 5;
+	grid-column-end: span 4;
 }
 .pose span{
 	text-align: center;
