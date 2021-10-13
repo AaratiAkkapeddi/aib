@@ -58,23 +58,21 @@ Number.prototype.map = function (in_min, in_max, out_min, out_max) {
 // fullpage_api.setAllowScrolling(false)
  function lattice( num ) {
 		let value = parseInt(num)
-		let map = Math.floor(value.map(0, 100, 1, 68));
-		if (map >= 0 && map <= 68){
-			document.getElementById("lattice").src = "assets/hyundai/leg_move/" + map + ".jpg"
+		let map = Math.floor(value.map(0, 100, 1, 189));
+		if (map >= 1 && map <= 189){
+			document.getElementById("lattice").src = "assets/hyundai/leg_move/f" + map + ".png"
 		}
-		let map2 = Math.floor(value.map(0, 100, 1, 68));
-		if (map2 >= 1 && map2 <= 68){
-			document.getElementById("bones").src = "assets/hyundai/leg_bones/human/" + map2 + ".jpg"
-		}
+		
+	
 		
 	}
 
 // fullpage_api.setAllowScrolling(false)
  function lattice2( num ) {
 		let value = parseInt(num)
-		let map = Math.floor(value.map(0, 100, 1, 50));
-		if (map >= 1 && map <= 50){
-			document.getElementById("lattice2").src = "assets/hyundai/lattice/new/f" + map + ".jpg"
+		let map = Math.floor(value.map(0, 100, 1, 99));
+		if (map >= 1 && map <= 99){
+			document.getElementById("lattice2").src = "assets/hyundai/lattice/f" + map + ".png"
 		}
 		
 	}
@@ -98,9 +96,9 @@ Number.prototype.map = function (in_min, in_max, out_min, out_max) {
 
  function lattice3( num ) {
 		let value = parseInt(num)
-		let map = Math.floor(value.map(0, 100, 31, 93));
-		if (map >= 31 && map <= 93){
-			document.getElementById("lattice3").src = "assets/hyundai/explode/f" + map + ".jpg"
+		let map = Math.floor(value.map(0, 100, 31, 227));
+		if (map >= 31 && map <= 227){
+			document.getElementById("lattice3").src = "assets/hyundai/explode/f" + map + ".png"
 		}
 		
 	}
