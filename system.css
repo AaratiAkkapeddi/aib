@@ -45,17 +45,18 @@
 	grid-column-end: span 6;
 }
 #leg-callout{
-	grid-column-start: 8;
-	align-self: start;
-	grid-row-start: 1;
-	grid-column-end: span 4;
+	position: absolute;
+    z-index: -1;
+    top: 2.6vw;
+    right: 4%;
+    width: 40%;
 }
 .pose span{
 	text-align: center;
 	display: block;
 }
 .pose:nth-child(3){
-	grid-column-start: 4;
+	grid-column-start: 3;
 	grid-column-end: span 2;
 	align-self: end;
 	bottom:8vw;
@@ -82,7 +83,7 @@
 }
 .top-right{
 /*	top:5vw;*/
-	grid-column-end: span 6;
+	grid-column-end: span 5;
 	padding-left:1.04vw;
 	grid-column-start: 7;
 	align-self:center;
@@ -341,8 +342,9 @@ a:link, a:active, a:focus, a:hover{
 	grid-column-end: span 5;
 	align-self: emd;
 	position: relative;
-	text-align: center;
-	color:rgb(170,170,170);
+	font-size:1.2vw;
+	text-align: left;
+	color:white;
 }
 .reptilian-span{
 	grid-column-start: 1;
@@ -408,7 +410,7 @@ input[type="range"]::-webkit-slider-thumb {
   appearance: none;
   width:2.08vw;
   height: 1.04vw;
-  top:-0.05vw;
+  top:-0.0vw;
   position: relative;
   background: #fff;
   border:none;
@@ -633,7 +635,7 @@ video.small, img.small{
 	top:-50px;
 }
 .caption{
-	color:rgb(170,170,170);
+	color:white;
 	display: block;
 	text-align:center;
 	font-size:1.2vw;
@@ -676,9 +678,9 @@ video.small, img.small{
 #crawl{
 	position: absolute;
     z-index: 0;
-    width: 70%;
-    right: -10vw;
-    top: 10vw;
+    width: 90%;
+    right: -15vw;
+    top: 5vw;
 }
 .diagram{
 	margin-top:1.04vw;
@@ -704,7 +706,7 @@ video.small, img.small{
 }
 
 .go-arrow{
-	background: rgb(170,170,170);
+	background: rgb(102,102,102);
 	display: inline-block;
 	padding:0.6vw 1.04vw;
 	width: calc(3.125vw - 2.08vw);
@@ -725,10 +727,12 @@ video.small, img.small{
 	align-self: center;
 }
 .interactive-block .caption{
-	color:white;
+	color:rgb(170,170,170);
 }
 .pose span{
-	color: rgb(170,170,170);
+	font-size:1.2vw;
+	text-align: left;
+	color:white;
 }
 .interactive-block.left{
 	grid-column-start: 1;
@@ -810,9 +814,15 @@ align-self: top;
 	margin-top:1vw;
 }
 #section6 span{
-	text-align:center;
+	text-align:left;
 	display: block;
-	margin-top:1vw;
+	margin-top:0.5vw;
+}
+br{
+	height: 0;
+}
+.text-block p{
+	margin:0 0 0.8em 0
 }
 /*.hyundai #section6 .slide-up{
 	width: 40%;
@@ -825,7 +835,7 @@ align-self: top;
 	top:-11vh;
 }
 #section4 .diagram{
-	width: 70%;
+	width: 75%;
 }
 #section4 .half-block{
 	vertical-align: top;
@@ -1026,18 +1036,18 @@ section.active .slowestest{
 
 section.active .slide-up{
 
-   animation: slideUp 0.7s ease-in-out 0s forwards;
+   animation: slideUp 0.6s cubic-bezier(0,.18,.56,.67) 0s forwards;
 }
 section.active .slide-up.slow{
-	animation: slideUp 0.7s ease-in-out 1s forwards;
+	animation: slideUp 1s cubic-bezier(0,.18,.56,.67) 1s forwards;
 }
 section.active .slide-up.slower{
-	animation: slideUp 0.7s ease-in-out 2s forwards;
+	animation: slideUp 1s cubic-bezier(0,.18,.56,.67) 2s forwards;
 }
 .slide-up{
 	transition:2s;
 	opacity:0;
-	animation: slideDown 1s ease-in-out 0s forwards;
+	animation: slideDown 1s cubic-bezier(0,.18,.56,.67) 0s forwards;
 }
 /* END EFFECTs */
 
@@ -1057,7 +1067,7 @@ section.active .slide-up.slower{
     transform: translateY(-5vh) rotate(-90deg);*/
 }
 .diagram-captions{
-	width: 62%;
+	width: 67%;
 	display: flex;
 	justify-content: space-around;
 }
