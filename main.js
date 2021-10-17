@@ -17,7 +17,16 @@
         		let loadedSection = this;
         		//using index
 
+
         		let slides = document.getElementsByClassName("section");
+        		console.log(document.querySelector("#section"+ (destination.index + 1)).classList)
+        		if(document.querySelector("#section"+ (destination.index + 1)).classList.contains("invert")){
+        			document.querySelector("nav").classList.add("invert")
+        			document.querySelector(".scroll-nav").classList.add("invert")
+        		}else{
+        			document.querySelector("nav").classList.remove("invert")
+        			document.querySelector(".scroll-nav").classList.remove("invert")
+        		}
 
 				if(destination.index == 0){
 					document.getElementById("move-up").classList.add("off")
