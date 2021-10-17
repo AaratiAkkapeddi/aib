@@ -63,6 +63,12 @@
     z-index: 1;
     position: relative;
 }
+.section.invert{
+	background:white;
+}
+.section{
+	overflow:hidden;
+}
 .text-block.invert{
 	color:black;
 	background:transparent;
@@ -611,7 +617,7 @@ section{
   max-height:100vh;
   overflow: visible;
   position: relative;
-  padding:0 50px;
+  padding:0 0px;
 }
 section.full{
 	padding:0;
