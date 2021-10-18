@@ -757,7 +757,7 @@ video.small, img.small{
 }
 .pose span{
 	font-size:1.2vw;
-	text-align: left;
+	text-align: center;
 	color:white;
 }
 .interactive-block.left{
