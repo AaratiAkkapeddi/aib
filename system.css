@@ -47,9 +47,9 @@
 #leg-callout{
 	position: absolute;
     z-index: -1;
-    top: 2.6vw;
+    top: 5vw;
     right: 8%;
-    width: 35%;
+    width: 33%;
 }
 .pose span{
 	text-align: center;
@@ -89,6 +89,11 @@
 	grid-column-end: span 6;
 	align-self:end;
 }
+.starck .bottom-left{
+	    align-self: end;
+    top: 4vw;
+    position: relative;
+}
 .top-left{
 	grid-column-start: 1;
 	grid-column-end: span 6;
@@ -98,8 +103,8 @@
 }
 .top-right{
 /*	top:5vw;*/
-	grid-column-end: span 5;
-	padding-left:1.04vw;
+	grid-column-end: span 6;
+	padding-left:4.16vw;
 	grid-column-start: 7;
 	align-self:center;
 	position: relative;
@@ -395,13 +400,13 @@ a:link, a:active, a:focus, a:hover{
 	z-index: 2;
 	background: rgba(0,0,0,0.7);
 }
-.invert.scroll-nav{
+/*.invert.scroll-nav{
 	color:black;
 	background:transparent;
 }
 .invert.scroll-nav svg{
 	filter:invert(200%);
-}
+}*/
 /* slider */
 input[type="range"]{
   -webkit-appearance: none;
@@ -543,12 +548,12 @@ nav > a{
 	width: 3.125vw;
 	height:3.125vw;
 }
-nav.invert a{
+/*nav.invert a{
 	background:transparent;
 }
 nav.invert a{
 	filter:invert(200%);
-}
+}*/
 .btn--back{
 	position: fixed;
 	top:0;
@@ -1197,8 +1202,8 @@ section#section2.active .instagram.long{
 }
 
 .instagram.long{
-	grid-column-end: span 6;
-	grid-column-start: 1;
+	grid-column-end: span 3;
+	grid-column-start: 4;
 	grid-row-start: 1;
 }
 
