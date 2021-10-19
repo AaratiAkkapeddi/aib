@@ -90,9 +90,13 @@
 	align-self:end;
 }
 .starck .bottom-left{
-	    align-self: end;
-    top: 4vw;
+	align-self: flex-start;
+    top: 2.5vw;
     position: relative;
+    padding-top:1.04vw;
+}
+.starck .bottom-left.nudge{
+	top:39.7vw;
 }
 .top-left{
 	grid-column-start: 1;
@@ -1109,6 +1113,7 @@ section.active .slide-up.slower{
 
 
 /* STARCK */
+
 .portrait{
 	width: 50%;
 }
