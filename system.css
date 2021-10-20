@@ -10,6 +10,7 @@
  4.165
  5.205
 */
+
 .grid{
 	width:calc(100vw - (5.205vw * 2));
 	height:calc(100vh - (5.205vw * 2));
@@ -47,9 +48,9 @@
 #leg-callout{
 	position: absolute;
     z-index: -1;
-    top: 5vw;
+    top: 2.3vw;
     right: 8%;
-    width: 33%;
+    width: 33.5%;
 }
 .pose span{
 	text-align: center;
@@ -404,13 +405,13 @@ a:link, a:active, a:focus, a:hover{
 	z-index: 2;
 	background: rgba(0,0,0,0.7);
 }
-/*.invert.scroll-nav{
+.invert.scroll-nav{
 	color:black;
 	background:transparent;
 }
 .invert.scroll-nav svg{
 	filter:invert(200%);
-}*/
+}
 /* slider */
 input[type="range"]{
   -webkit-appearance: none;
@@ -546,18 +547,20 @@ nav a svg{
 
 }
 
-
+.starck nav a, .starck .scroll-nav{
+	background:transparent;
+}
 nav > a{
 	background: rgba(0,0,0,0.7);
 	width: 3.125vw;
 	height:3.125vw;
 }
-/*nav.invert a{
+nav.invert a{
 	background:transparent;
 }
 nav.invert a{
 	filter:invert(200%);
-}*/
+}
 .btn--back{
 	position: fixed;
 	top:0;
@@ -1118,11 +1121,16 @@ section.active .slide-up.slower{
 	width: 50%;
 }
 .instagram {
-	background-size: cover;
+	background-size: contain;
+	background-color:white;
+	background-repeat:no-repeat;
 	background-position: center center;
 	grid-column-start: 1; 
 	grid-column-end: span 3;
 	height: 17.5vw;
+}
+.instagram.body{
+	background-size:cover;
 }
 .instagram:nth-child(2), .instagram:nth-child(4){
 	grid-column-start: 4;
@@ -1167,34 +1175,34 @@ section.active .instagram:nth-child(6){
    animation: fadeIn 2.5s ease-in-out 2s forwards;
 }
 section.active .instagram:nth-child(2){
-   animation: fadeIn 2.5s ease-in-out 3s forwards;
-}
-section.active .instagram:nth-child(4){
-   animation: fadeIn 2.5s ease-in-out 3.5s forwards;
-}
-section.active .instagram:nth-child(5){
    animation: fadeIn 2.5s ease-in-out 4s forwards;
 }
-section.active .instagram:nth-child(1){
+section.active .instagram:nth-child(4){
    animation: fadeIn 2.5s ease-in-out 4.5s forwards;
 }
-section.active .instagram:nth-child(7){
+section.active .instagram:nth-child(5){
+   animation: fadeIn 2.5s ease-in-out 5s forwards;
+}
+section.active .instagram:nth-child(1){
    animation: fadeIn 2.5s ease-in-out 5.5s forwards;
 }
-section.active .instagram:nth-child(11){
-   animation: fadeIn 2.5s ease-in-out 6s forwards;
-}
-section.active .instagram:nth-child(9){
+section.active .instagram:nth-child(7){
    animation: fadeIn 2.5s ease-in-out 6.5s forwards;
 }
-section.active .instagram:nth-child(10){
+section.active .instagram:nth-child(11){
    animation: fadeIn 2.5s ease-in-out 7s forwards;
 }
-section.active .instagram:nth-child(8){
+section.active .instagram:nth-child(9){
    animation: fadeIn 2.5s ease-in-out 7.5s forwards;
 }
-section.active .instagram:nth-child(12){
+section.active .instagram:nth-child(10){
    animation: fadeIn 2.5s ease-in-out 8s forwards;
+}
+section.active .instagram:nth-child(8){
+   animation: fadeIn 2.5s ease-in-out 8.5s forwards;
+}
+section.active .instagram:nth-child(12){
+   animation: fadeIn 2.5s ease-in-out 9s forwards;
 }
 section#section2.active .instagram:nth-child(8){
    animation: fadeIn 2.5s ease-in-out 2s forwards;
@@ -1216,4 +1224,12 @@ section#section2.active .instagram.long{
 	transition:2s;
 	opacity:0;
 	animation: fadeOut 2s ease-in-out 0s forwards;
+}
+
+.fade-title{
+	grid-column-start: 1;
+	position: absolute;
+    width: 44%;
+    top: 18.5vw;
+    animation: fadeOut 2.5s ease-in-out 3s forwards;
 }
