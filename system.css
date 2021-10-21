@@ -1233,3 +1233,10 @@ section#section2.active .instagram.long{
     top: 18.5vw;
     animation: fadeOut 2.5s ease-in-out 3s forwards;
 }
+
+/* pavilion */
+.pavilion .left-vid, .jpl .left-vid{
+	grid-column-start: 1;
+    grid-column-end: span 6;
+    align-self: center;
+}
