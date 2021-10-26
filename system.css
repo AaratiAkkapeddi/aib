@@ -10,7 +10,10 @@
  4.165
  5.205
 */
-
+.hp{
+	width: 100vw;
+	overflow-x:hidden;
+}
 .grid{
 	width:calc(100vw - (5.205vw * 2));
 	height:calc(100vh - (5.205vw * 2));
@@ -937,9 +940,65 @@ br{
 .hp-image{
 	height: 60vh;
 	width:100%;
+	margin-right:1vw;
+	border:1px solid rgb(102,102,102);
 	background-size: 120%;
 	background-repeat: no-repeat;
 	background-position:bottom center;
+}
+.purple.hp-image{
+	border:1px solid #9775E1;
+}
+
+/* floating images */
+@-webkit-keyframes slideUpOut {
+  0%   { transform: translateY(100px);opacity:0; }
+  5% { transform: translateY(0px);opacity:1;  }
+  95% { transform: translateY(0px);opacity:1;  }
+  100% {transform: translateY(100px); opacity: 0;}
+}
+@-moz-keyframes slideUpOut {
+  0%   { transform: translateY(100px);opacity:0; }
+  5% { transform: translateY(0px);opacity:1;  }
+  95% { transform: translateY(0px);opacity:1;  }
+  100% {transform: translateY(100px); opacity: 0;}
+}
+@-o-keyframes slideUpOut {
+  0%   { transform: translateY(100px);opacity:0; }
+  5% { transform: translateY(0px);opacity:1;  }
+  95% { transform: translateY(0px);opacity:1;  }
+  100% {transform: translateY(100px); opacity: 0;}
+}
+@keyframes slideUpOut {
+  0%   { transform: translateY(100px);opacity:0; }
+  5% { transform: translateY(0px);opacity:1;  }
+  95% { transform: translateY(0px);opacity:1;  }
+  100% {transform: translateY(100px); opacity: 0;}
+}
+.fade-paragraphs p{
+	opacity: 0;
+	padding:calc(1.04vw * 2);
+	position: absolute;
+	top:-1vw;
+	left:-2.08vw;
+	background: rgba(0,0,0,0.7);
+}
+.fade-paragraphs{
+	padding:0;
+	background: transparent;
+}
+.active .fade-paragraphs p:nth-child(1){
+	animation: slideUpOut 9.9s ease-in-out 0.1s forwards;
+}
+.active .fade-paragraphs p:nth-child(2){
+	animation: slideUpOut 12s ease-in-out 10s forwards;
+}
+.active .fade-paragraphs p:nth-child(3){
+	animation: slideUpOut 10s ease-in-out 22s forwards;
+}
+.hp-image a{
+	top:0;
+	left:0;
 }
 a:hover .go-arrow{
 	background:#9775E1;
@@ -1111,6 +1170,7 @@ section.active .slide-up.slower{
 	transform-origin: right;
     transform: translateY(-5vh) rotate(-90deg);*/
 }
+
 .diagram-captions{ 
 	width: 89%;
 	display: flex;

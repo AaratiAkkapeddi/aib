@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Home</title>
 	
-	<link rel="stylesheet" href="flickity.min.css">
+	<link rel="stylesheet" href="flickity.css">
 
 </head>
 <body class="hp">
@@ -58,7 +58,17 @@ pageDots: false,
   contain: true
 });
 
-
+let a = document.querySelectorAll('.hp-image a')
+console.log(a)
+for (var i = a.length - 1; i >= 0; i--) {
+	a[i].addEventListener("mouseover", function(){
+		console.log('hi')
+		this.parentNode.classList.add('purple')
+	})
+	a[i].addEventListener("mouseout", function(){
+		this.parentNode.classList.remove('purple')
+	})
+}
 </script>
 	
 </body>
