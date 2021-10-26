@@ -97,7 +97,11 @@
     padding-top:1.04vw;
 }
 .starck .bottom-left.nudge{
-	top:39.7vw;
+	top:39vw;
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+	height:10vw;
 }
 .top-left{
 	grid-column-start: 1;
@@ -121,13 +125,14 @@
 	grid-column-end:span 4;
 	top: 7vw;
     position: relative;
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.5);
 }
 .i2{
 	grid-column-start: 4;
 	grid-column-end:span 4;
 	grid-row:1;
 	align-self: start;
-
+	box-shadow: 5px 5px 8px rgba(0,0,0,0.5);
     position: relative;
 }
 .i1{
@@ -137,6 +142,7 @@
 	align-self: center;
 	top: 9vw;
     position: relative;
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.5);
 }
 .i4{
 	grid-column-start: 9;
@@ -145,6 +151,7 @@
 	align-self: start;
 	top: 2vw;
     position: relative;
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.5);
 }
 /* end */
 .bg{
@@ -873,7 +880,7 @@ br{
 	top:-11vh;
 }
 #section4 .diagram{
-	width: 75%;
+	width: 102%;
 }
 #section4 .half-block{
 	vertical-align: top;
@@ -1049,16 +1056,16 @@ section.active .fade-in{
    animation: slideUp 0.5s ease-in-out 0s forwards;
 }
 section.active .fade-in.slow{
-	animation: slideUp 0.5s ease-in-out 0.1s forwards;
+	animation: slideUp 1s ease-in-out 0.1s forwards;
 }
 section.active .fade-in.slower{
-	animation: slideUp 0.5s ease-in-out 0.3s forwards;
+	animation: slideUp 1s ease-in-out 0.3s forwards;
 }
 section.active .slowest{
-	animation: slideUp 0.5s ease-in-out 0.7s forwards;
+	animation: slideUp 1s ease-in-out 0.7s forwards;
 }
 section.active .slowestest{
-	animation: slideUp 0.5s ease-in-out 1s forwards;
+	animation: slideUp 1s ease-in-out 1s forwards;
 }
 .fade-in{
 	transition:2s;
@@ -1105,8 +1112,9 @@ section.active .slide-up.slower{
     transform: translateY(-5vh) rotate(-90deg);*/
 }
 .diagram-captions{
-	width: 67%;
+	width: 89%;
 	display: flex;
+	margin-top:3.6vw;
 	justify-content: space-around;
 }
 #lattice3{
@@ -1168,52 +1176,86 @@ section.active .slide-up.slower{
 	grid-row-start: 1;
 	grid-column-start: 7;
 }
+
 section.active .instagram:nth-child(3){
-  animation: fadeIn 0.5s ease-in-out 0s forwards;
-}
-section.active .instagram:nth-child(6){
-   animation: fadeIn 2.5s ease-in-out 2s forwards;
-}
-section.active .instagram:nth-child(2){
-   animation: fadeIn 2.5s ease-in-out 4s forwards;
-}
-section.active .instagram:nth-child(4){
-   animation: fadeIn 2.5s ease-in-out 4.5s forwards;
-}
-section.active .instagram:nth-child(5){
-   animation: fadeIn 2.5s ease-in-out 5s forwards;
-}
-section.active .instagram:nth-child(1){
-   animation: fadeIn 2.5s ease-in-out 5.5s forwards;
-}
-section.active .instagram:nth-child(7){
-   animation: fadeIn 2.5s ease-in-out 6.5s forwards;
-}
-section.active .instagram:nth-child(11){
-   animation: fadeIn 2.5s ease-in-out 7s forwards;
+  animation: fadeIn 2.5s ease-in-out 1.8s forwards;
 }
 section.active .instagram:nth-child(9){
-   animation: fadeIn 2.5s ease-in-out 7.5s forwards;
+   animation: fadeIn 2.5s ease-in-out 3.5s forwards;
 }
-section.active .instagram:nth-child(10){
-   animation: fadeIn 2.5s ease-in-out 8s forwards;
+section.active .instagram:nth-child(6){
+   animation: fadeIn 2.5s ease-in-out 4.5s forwards;
 }
 section.active .instagram:nth-child(8){
+   animation: fadeIn 2.5s ease-in-out 5.5s forwards;
+}
+section.active .instagram:nth-child(5){
+   animation: fadeIn 2.5s ease-in-out 6s forwards;
+}
+section.active .instagram:nth-child(11){
+   animation: fadeIn 2.5s ease-in-out 6.5s forwards;
+}
+section.active .instagram:nth-child(10){
+   animation: fadeIn 2.5s ease-in-out 7.5s forwards;
+}
+section.active .instagram:nth-child(1){
+	display: none;
+   animation: fadeIn 2.5s ease-in-out 8s forwards;
+}
+section.active .instagram:nth-child(2){
+	display: none;
+   animation: fadeIn 2.5s ease-in-out 8.5s forwards;
+}
+section.active .instagram:nth-child(7){
+   animation: fadeIn 2.5s ease-in-out 8s forwards;
+}
+section.active .instagram:nth-child(4){
    animation: fadeIn 2.5s ease-in-out 8.5s forwards;
 }
 section.active .instagram:nth-child(12){
    animation: fadeIn 2.5s ease-in-out 9s forwards;
 }
-section#section2.active .instagram:nth-child(8){
+/*2*/
+section#section2 .instagram:nth-child(8){
+	display: none;
    animation: fadeIn 2.5s ease-in-out 2s forwards;
 }
-section#section2.active .instagram:nth-child(6){
-   animation: fadeIn 2.5s ease-in-out 1s forwards;
-}
-section#section2.active .instagram.long{
-   animation: fadeIn 2.5s ease-in-out 6s forwards;
-}
 
+section#section2 .instagram:nth-child(6){
+	display: none;
+}
+section#section2 .instagram:nth-child(3){
+	display: none;
+}
+section#section2.active .instagram:nth-child(4){
+	animation: fadeIn 2.5s ease-in-out 1s forwards;
+}
+section#section2.active .instagram:nth-child(5){
+	animation: fadeIn 2.5s ease-in-out 1.5s forwards;
+}
+section#section2.active .instagram:nth-child(7){
+	animation: fadeIn 2.5s ease-in-out 3s forwards;
+}
+section#section2 .instagram:nth-child(10){
+	grid-column-start: 7
+}
+section#section2 .instagram:nth-child(9){
+	grid-row-start: 2;
+	grid-column-start: 4;
+}
+section#section2 .instagram:nth-child(11){
+	grid-column-start: 7
+	grid-row-start: 2;
+}
+section#section2.active .instagram:nth-child(10){
+	animation: fadeIn 2.5s ease-in-out 2s forwards;
+}
+section#section2.active .instagram:nth-child(9){
+	animation: fadeIn 2.5s ease-in-out 2.5s forwards;
+}
+section#section2.active .instagram:nth-child(11){
+	animation: fadeIn 2.5s ease-in-out 3.5s forwards;
+}
 .instagram.long{
 	grid-column-end: span 3;
 	grid-column-start: 4;
@@ -1226,12 +1268,27 @@ section#section2.active .instagram.long{
 	animation: fadeOut 2s ease-in-out 0s forwards;
 }
 
+.active .fade-title{
+	grid-column-start: 1;
+	position: absolute;
+    width: 44%;
+    top: 9.25vw;
+    z-index: 0;
+    animation: fadeOut 2.5s ease-in-out 8.5s forwards;
+}
 .fade-title{
 	grid-column-start: 1;
 	position: absolute;
     width: 44%;
-    top: 18.5vw;
-    animation: fadeOut 2.5s ease-in-out 3s forwards;
+    top: 9.25vw;
+    z-index: 0;
+    opacity: 1;
+}
+.active #fade-para{
+	animation: fadeIn 2.5s ease-in-out 10s forwards;
+}
+#fade-para{
+	opacity: 0;
 }
 
 /* pavilion */
@@ -1240,3 +1297,9 @@ section#section2.active .instagram.long{
     grid-column-end: span 6;
     align-self: center;
 }
+
+.pavilion .invert .text-block, .jpl .invert .text-block, .pavilion .invert h1, .jpl .invert h1{
+	color:black;
+	background:transparent;
+}
+

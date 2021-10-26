@@ -705,6 +705,7 @@ align-self: top;
 	position:absolute;
 	max-width: 28%;
 	z-index: 0;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
 }
 
 .i1{
