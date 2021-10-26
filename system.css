@@ -1111,7 +1111,7 @@ section.active .slide-up.slower{
 	transform-origin: right;
     transform: translateY(-5vh) rotate(-90deg);*/
 }
-.diagram-captions{
+.diagram-captions{ 
 	width: 89%;
 	display: flex;
 	margin-top:3.6vw;
