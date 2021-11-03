@@ -76,6 +76,7 @@ Number.prototype.map = function (in_min, in_max, out_min, out_max) {
 		
 	}
 
+
 // fullpage_api.setAllowScrolling(false)
  function lattice2( num ) {
 		let value = parseInt(num)
@@ -111,7 +112,21 @@ Number.prototype.map = function (in_min, in_max, out_min, out_max) {
 		}
 		
 	}
-
+/*pavilion*/
+ function pavilion1( num ) {
+		let value = parseInt(num)
+		let map = Math.floor(value.map(0, 100, 1, 172));
+		if (map >= 1 && map <= 172){
+			document.getElementById("pavilion1").src = "assets/pavilion/interactive1/file" + map + ".jpg"
+		}	
+}
+ function pavilion2( num ) {
+		let value = parseInt(num)
+		let map = Math.floor(value.map(0, 100, 1, 79));
+		if (map >= 1 && map <= 79){
+			document.getElementById("pavilion2").src = "assets/pavilion/interactive2/file" + map + ".jpg"
+		}	
+}
 document.getElementById("move-down").addEventListener("click", function(){
 	fullpage_api.moveSectionDown();
 	

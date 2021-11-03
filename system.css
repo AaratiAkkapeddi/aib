@@ -556,14 +556,28 @@ nav a svg{
 	position: relative;
 
 }
+.text-block.invert .btn,.text-block.invert  a.btn{
+	color:black;
+}
 
-.starck nav a, .starck .scroll-nav{
+.starck nav a, .starck .scroll-nav, .pavilion nav a, .pavilion .scroll-nav {
 	background:transparent;
 }
+
 nav > a{
 	background: rgba(0,0,0,0.7);
 	width: 3.125vw;
 	height:3.125vw;
+}
+#curtain{
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 0;
+	pointer-events: none;
+	background: rgba(0,0,0,0.5);
+	width:100vw;
+	height:100vh;
 }
 nav.invert a{
 	background:transparent;
@@ -1358,8 +1372,5 @@ section#section2.active .instagram:nth-child(11){
     align-self: center;
 }
 
-.pavilion .invert .text-block, .jpl .invert .text-block, .pavilion .invert h1, .jpl .invert h1{
-	color:black;
-	background:transparent;
-}
+
 
