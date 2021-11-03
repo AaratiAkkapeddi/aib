@@ -127,6 +127,21 @@ Number.prototype.map = function (in_min, in_max, out_min, out_max) {
 			document.getElementById("pavilion2").src = "assets/pavilion/interactive2/file" + map + ".jpg"
 		}	
 }
+/*jpl*/
+ function jpl1( num ) {
+		let value = parseInt(num)
+		let map = Math.floor(value.map(0, 100, 1, 50));
+		if (map >= 1 && map <= 50){
+			document.getElementById("jpl1").src = "assets/jpl/interactive1/file" + map + ".jpg"
+		}	
+}
+ function jpl2( num ) {
+		let value = parseInt(num)
+		let map = Math.floor(value.map(0, 100, 1, 272));
+		if (map >= 1 && map <= 272){
+			document.getElementById("jpl2").src = "assets/jpl/interactive2/file" + map + ".jpg"
+		}	
+}
 document.getElementById("move-down").addEventListener("click", function(){
 	fullpage_api.moveSectionDown();
 	
