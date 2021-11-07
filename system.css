@@ -1414,7 +1414,7 @@ section#section2.active .instagram:nth-child(11){
 .pavilion .active .fade-paragraphs p:nth-child(4){
 	animation: slideUp 0.2s ease-in-out 14s forwards;
 }
-.pavilion .bottom-text{
+.pavilion .bottom-text, .hyundai .bottom-text{
 	width: calc(1104px - (1.04vw * 2));
 	height: 150px;
 	position: absolute;
