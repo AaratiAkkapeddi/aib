@@ -989,6 +989,51 @@ br{
   95% { transform: translateY(0px);opacity:1;  }
   100% {transform: translateY(100px); opacity: 0;}
 }
+
+
+
+/* floating images */
+@-webkit-keyframes slide {
+  0%   { opacity:0; }
+  100% { opacity:1;  }
+}
+@-moz-keyframes slide {
+  0%   { opacity:0; }
+  100% { opacity:1;  }
+}
+@-o-keyframes slide {
+  0%   { opacity:0; }
+  100% { opacity:1;  }
+}
+@keyframes slide {
+  0%   { opacity:0; }
+  100% { opacity:1;  }
+}
+/* floating images */
+@-webkit-keyframes slideUpOuttwo {
+  0%   {  opacity:0; }
+  5% { opacity:1;  }
+  95% { opacity:1;  }
+  100% {  opacity: 0;}
+}
+@-moz-keyframes slideUpOuttwo {
+  0%   {  opacity:0; }
+  5% { opacity:1;  }
+  95% { opacity:1;  }
+  100% {  opacity: 0;}
+}
+@-o-keyframes slideUpOuttwo {
+  0%   {  opacity:0; }
+  5% { opacity:1;  }
+  95% { opacity:1;  }
+  100% {  opacity: 0;}
+}
+@keyframes slideUpOuttwo {
+  0%   {  opacity:0; }
+  5% { opacity:1;  }
+  95% { opacity:1;  }
+  100% {  opacity: 0;}
+}
 .fade-paragraphs p{
 	opacity: 0;
 	padding:calc(1.04vw * 2);
@@ -1372,7 +1417,7 @@ section#section2.active .instagram:nth-child(11){
     align-self: center;
 }
 .active .title-pavilion{
-    animation: fadeOut 2.5s ease-in-out 8.5s forwards;
+    animation: fadeOut 1.5s ease-in-out 5s forwards;
 }
 .title-pavilion{
     opacity: 1;
@@ -1380,7 +1425,7 @@ section#section2.active .instagram:nth-child(11){
 }
 
 .active #fade-text-pavilion{
-	animation: fadeIn 2.5s ease-in-out 8.5s forwards;
+	animation: fadeIn 1.5s ease-in-out 6s forwards;
 }
 #fade-text-pavilion{
 	opacity: 0;
@@ -1403,16 +1448,16 @@ section#section2.active .instagram:nth-child(11){
 	background: transparent;
 }
 .pavilion .active .fade-paragraphs p:nth-child(1){
-	animation: slideUpOut 4s ease-in-out 0.1s forwards;
+	animation: slideUpOuttwo 4s ease-in-out 0.1s forwards;
 }
 .pavilion .active .fade-paragraphs p:nth-child(2){
-	animation: slideUpOut 5s ease-in-out 4s forwards;
+	animation: slideUpOuttwo 5s ease-in-out 4s forwards;
 }
 .pavilion .active .fade-paragraphs p:nth-child(3){
-	animation: slideUpOut 5s ease-in-out 9s forwards;
+	animation: slideUpOuttwo 5s ease-in-out 9s forwards;
 }
 .pavilion .active .fade-paragraphs p:nth-child(4){
-	animation: slideUp 0.2s ease-in-out 14s forwards;
+	animation: slide 0.2s ease-in-out 14s forwards;
 }
 .pavilion .bottom-text, .hyundai .bottom-text{
 	width: calc(1104px - (1.04vw * 2));
