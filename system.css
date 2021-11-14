@@ -1056,13 +1056,13 @@ br{
 	background: transparent;
 }
 .active .fade-paragraphs p:nth-child(1){
-	animation: slideUpOut 9.9s ease-in-out 0.1s forwards;
+	animation: slideUpOuttwo 9.9s ease-in-out 0.1s forwards;
 }
 .active .fade-paragraphs p:nth-child(2){
-	animation: slideUpOut 12s ease-in-out 10s forwards;
+	animation: slideUpOuttwo 12s ease-in-out 10s forwards;
 }
 .active .fade-paragraphs p:nth-child(3){
-	animation: slideUpOut 10s ease-in-out 22s forwards;
+	animation: slideUpOuttwo 10s ease-in-out 22s forwards;
 }
 .hp-image a{
 	top:0;
