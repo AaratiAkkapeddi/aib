@@ -979,12 +979,26 @@ br{
 	top:0;
 }
 #credits-trigger{
+	color:#9775E1;
+	background: transparent;
+	font-size:1.46vw;
+	border:none;
+	outline: none;
 	grid-column-start: 12;
 	grid-column-end: span 1;
 	text-align: right;
 }
+*:focus, #close-credits{
+	outline:1px solid #9775E1;
+}
+#credits-trigger:focus{
+	outline:1px solid #9775E1;
+}
 #close-credits{
   top:0;
+  background: none;
+  outline:none;
+  border: none;
   right:3rem;
   position: absolute;
   margin: 0rem;

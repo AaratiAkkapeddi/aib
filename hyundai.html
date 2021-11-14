@@ -30,7 +30,7 @@
 	<!-- content -->
 	<div class="hyundai" id="fullpage">
 
-		<section tabindex="2" id="section1" class="section full" >
+		<section id="section1" class="section full" >
 			<div class="bg" style="z-index:-1;position:absolute;background-image:url(assets/hyundai/terrain1.jpg);" ></div>
 			
 			<div class="grid">
@@ -39,7 +39,7 @@
 				</div>
 			</div>
 		</section>
-        <section tabindex="3" id="section2" class="section fp-auto-height-responsive" >
+        <section id="section2" class="section fp-auto-height-responsive" >
 
 				<div class="bg opacity" style="background-image:url(assets/hyundai/post_it.jpg);" ></div>
 			
@@ -54,7 +54,7 @@
 					</div>
 				</div>
 		</section>
-		<section tabindex="4" id="section3" class="section full fp-auto-height-responsive" >
+		<section id="section3" class="section full fp-auto-height-responsive" >
 
 			<video style="position: absolute;z-index: 0;" class="fade-in" aria-describedby="video depicts clips of designers at hyundai using software to prototype this vehicle" class="" data-autoplay muted loop>
 				<source src="assets/hyundai/prototype0.mp4" type="video/mp4">
@@ -69,7 +69,7 @@
 
 		
 
-		<section tabindex="5" id="section4" class="section" >
+		<section id="section4" class="section" >
 			 	<div class="grid">
 	        		<div style="grid-column-end: span 5;top: -1.5vw;" class="text-block top-left slide-up">
 	        		 <p>As humans we take walking for granted.</p>
@@ -89,7 +89,7 @@
 			
 			
 		</section>
-        <section tabindex="6" id="section5" class="section" >
+        <section id="section5" class="section" >
         	<video id="crawl" style="" class="fade-in" aria-describedby="video depicts elevate prototype transforming from erect mammalian walking mode to lower reptilian crawling mode" class="" data-autoplay muted loop>
 				<source src="assets/hyundai/looprepmam.mp4" type="video/mp4">
 			</video>
@@ -232,5 +232,12 @@
 <!-- scroll behavior -->
 	<script src="fullpage.js"></script>
 	<script src="main.js"></script>
+	<script>	
+	document.onkeydown = function(evt) {
+	    evt = evt || window.event;
+	    if (evt.keyCode == 27) {
+	        window.location.href = "/index.html"
+	    }
+	};</script>
 </body>
 </html>
