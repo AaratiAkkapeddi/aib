@@ -972,7 +972,9 @@ br{
 .purple.hp-image{
 	border:1px solid #9775E1;
 }
-
+span.purple{
+	color:#9775E1;
+}
 /* floating images */
 @-webkit-keyframes slideUpOut {
   0%   { transform: translateY(100px);opacity:0; }
