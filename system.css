@@ -972,6 +972,49 @@ br{
 .purple.hp-image{
 	border:1px solid #9775E1;
 }
+.credits-modal{
+	display: none;
+	position: fixed;
+	left:0;
+	top:0;
+}
+#credits-trigger{
+	grid-column-start: 12;
+	grid-column-end: span 1;
+	text-align: right;
+}
+#close-credits{
+  top:0;
+  right:3rem;
+  position: absolute;
+  margin: 0rem;
+  font-size: 100px;
+  font-family: arial;
+  color:#9775E1;
+}
+#close-credits svg{
+	width: 45px;
+}
+.credits-modal.open{
+	display: flex;
+	padding:5rem;
+	width: calc(100vw - 10rem);
+	justify-content: center;
+	
+}
+#credits-bg{
+	position: absolute;
+	width:100%;
+	height:100vh;
+	top:0;
+	left:0;
+}
+.credits-modal.open .inner{
+	padding:2rem;
+	border:1px solid #9775E1;
+	position: relative;
+	background: rgba(0,0,0,1);
+}
 span.purple{
 	color:#9775E1;
 }
