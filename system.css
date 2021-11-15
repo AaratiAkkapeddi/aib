@@ -978,6 +978,9 @@ br{
 	left:0;
 	top:0;
 }
+.bg-white{
+	background: white;
+}
 #credits-trigger{
 	color:#9775E1;
 	background: transparent;

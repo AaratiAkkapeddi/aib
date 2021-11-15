@@ -16,7 +16,7 @@
         		counter.nodeValue = destination.index + 1;
         		let loadedSection = this;
         		//using index
-
+        		
 
         		let slides = document.getElementsByClassName("section");
         		console.log(document.querySelector("#section"+ (destination.index + 1)).classList)
@@ -41,7 +41,17 @@
         	},
         	onLeave: function(origin, destination, direction){
 					var leavingSection = this;
+     				
 
+						var video = document.querySelector("#para-video");
+					// or video = $('.video-selector')[0];
+					if(video){
+
+						console.log(video)
+					video.pause();
+					video.currentTime = 0;
+					video.load();
+					}
 					
 					//after leaving section 2
 					// if(origin.index == 3 && direction =='down' && !document.querySelector("#section3 .one").classList.contains("off")){
