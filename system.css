@@ -992,7 +992,7 @@ br{
 	outline:1px solid #9775E1;
 }
 #credits-trigger:focus{
-	outline:1px solid #9775E1;
+	text-decoration: underline;
 }
 #close-credits{
   top:0;
