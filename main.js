@@ -15,7 +15,16 @@
         		let counter = document.getElementById("page").firstChild
         		counter.nodeValue = destination.index + 1;
         		let loadedSection = this;
-        		//using index
+        		window.speechSynthesis.cancel();
+        		var msg = new SpeechSynthesisUtterance();
+        		let text = document.querySelector("#section"+(destination.index + 1)+" .accessibility-txt");
+        		if(text){
+					text = text.innerHTML;
+					msg.text = text;
+					window.speechSynthesis.speak(msg);
+	        		//using index
+        		}
+        		
         		
 
         		let slides = document.getElementsByClassName("section");
@@ -163,4 +172,78 @@ document.getElementById("move-up").addEventListener("click", function(){
 window.addEventListener("load", function(){
 	const loader = document.querySelector("#loader");
 	loader.classList.add("off");
+	
+	
 })
+let counter = 0;
+
+document.getElementById("go-home").addEventListener('focus', (event) => {
+	window.speechSynthesis.cancel();
+	if(counter < 1){
+	let firstText = document.getElementById("first-accessibility")?.innerHTML || "";
+	firstText = firstText + " press enter to go back to home page or press up & down arrows to navigate story"
+	window.speechSynthesis.cancel();
+	let msg = new SpeechSynthesisUtterance();
+	msg.text = firstText
+	window.speechSynthesis.speak(msg);
+	counter = counter + 1;
+	}else{
+		window.speechSynthesis.cancel();
+	let text = "press up & down arrows to navigate story or press enter to go back to home page"
+	var msg = new SpeechSynthesisUtterance();
+	msg.text = text
+	window.speechSynthesis.speak(msg);
+
+	}
+})
+
+document.addEventListener('keydown', checkKey);
+
+function checkKey(e) {
+
+    e = e || window.event;
+    console.log(e.keyCode)
+    if (e.keyCode == '9') {
+    	if(document.activeElement?.id == "go-home"){
+    		let text = "press enter to go back to home page or press up & down arrows to navigate story"
+			var msg = new SpeechSynthesisUtterance();
+			msg.text = text
+			window.speechSynthesis.cancel();
+			window.speechSynthesis.speak(msg);
+    	}
+     
+    }
+
+
+}
+// document.getElementById("fake-click").addEventListener("click", function(){
+
+// let firstText = document.getElementById("first-accessibility").innerHTML;
+// 	console.log(firstText)
+// window.speechSynthesis.cancel();
+// let msg = new SpeechSynthesisUtterance();
+// msg.text = firstText
+// window.speechSynthesis.speak(msg);
+
+// })
+
+// document.addEventListener('keydown', checkKey);
+
+// function checkKey(e) {
+
+//     e = e || window.event;
+//     console.log(e.keyCode)
+//     if (e.keyCode == '9') {
+//     	let firstText = document.getElementById("first-accessibility")
+//     	if(firstText)
+//         let home = document.getElementById("go-home")
+//         if(home){
+//         	home.focus()
+// 	        window.speechSynthesis.speak("press enter to go back to home page");
+// 	    }
+//     }
+
+
+// }
+
+

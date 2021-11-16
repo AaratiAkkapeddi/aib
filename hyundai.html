@@ -5,7 +5,7 @@
 	<link rel="stylesheet" href="fullpage.css">
 	<link rel="stylesheet" href="system.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Hyundai</title>
+	<title>How can we combine a car and a robot?</title>
 </head>
 <body class="hyundai">
 	<div id="loader">
@@ -14,7 +14,7 @@
 	</div>
 	<!-- Navigation -->
 
-	<nav><a tabindex="1" aria-label="go home" href="index.html" class=''><svg alt='home icon' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 201.16 204.4"><defs><style>.cls-1{fill:#fff;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M0,204.4v-2.61q0-49.87.06-99.74a5.7,5.7,0,0,1,1.5-3.65Q50.29,49.74,99.17,1.22c.35-.35.72-.69,1.27-1.22.68.62,1.36,1.18,2,1.8Q150.81,49.92,199.23,98a5.84,5.84,0,0,1,1.93,4.56q-.09,49.24,0,98.5c0,3.31,0,3.31-3.27,3.31H0Zm180-21.14v-3q0-34.48,0-69a5.76,5.76,0,0,0-1.88-4.55q-38-37.65-75.9-75.37c-.57-.57-1.19-1.1-1.8-1.66-.4.35-.67.55-.9.78Q61,68.94,22.38,107.39a5.33,5.33,0,0,0-1.27,3.5q-.11,34.86,0,69.72c0,.87.1,1.74.16,2.65Z"/></g></g></svg></a></nav>
+	<nav><a id="go-home" tabindex="1" aria-label="go home" href="index.html" class=''><svg alt='home icon' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 201.16 204.4"><title>home icon, click to go home</title><defs><style>.cls-1{fill:#fff;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M0,204.4v-2.61q0-49.87.06-99.74a5.7,5.7,0,0,1,1.5-3.65Q50.29,49.74,99.17,1.22c.35-.35.72-.69,1.27-1.22.68.62,1.36,1.18,2,1.8Q150.81,49.92,199.23,98a5.84,5.84,0,0,1,1.93,4.56q-.09,49.24,0,98.5c0,3.31,0,3.31-3.27,3.31H0Zm180-21.14v-3q0-34.48,0-69a5.76,5.76,0,0,0-1.88-4.55q-38-37.65-75.9-75.37c-.57-.57-1.19-1.1-1.8-1.66-.4.35-.67.55-.9.78Q61,68.94,22.38,107.39a5.33,5.33,0,0,0-1.27,3.5q-.11,34.86,0,69.72c0,.87.1,1.74.16,2.65Z"/></g></g></svg></a></nav>
 	<div tabindex="-1" class="scroll-nav">
 		<button tabindex="-1" id="move-up">
 
@@ -31,15 +31,19 @@
 	<div class="hyundai" id="fullpage">
 
 		<section id="section1" class="section full" >
+			<div id="first-accessibility" class="accessibility-txt">How can we combine a car and a robot? There are limits to where even the toughest off-road vehicles can go.
+				Places with steep or uneven terrain where no conventional car could reach. Media description: background image depicts a trecherous terrain</div>
 			<div class="bg" style="z-index:-1;position:absolute;background-image:url(assets/hyundai/terrain1.jpg);" ></div>
 			
 			<div class="grid">
-				<div style="grid-column-end:span 6;" class="text-block padding bottom-left slide-up"><h1>How can we combine <br>a car and a robot?</h1><br><p>There are limits to where even the toughest off-road vehicles can go.</p>
+				<div tabindex="1" style="grid-column-end:span 6;" class="text-block padding bottom-left slide-up"><h1>How can we combine <br>a car and a robot?</h1><br><p>There are limits to where even the toughest off-road vehicles can go.</p>
 				Places with steep or uneven terrain where no conventional car could reach. 
 				</div>
 			</div>
 		</section>
         <section id="section2" class="section fp-auto-height-responsive" >
+        		<div class="accessibility-txt">How do you make a vehicle that can move through places that are only accessible by foot?
+        		media description: Four images fade into place over a background depicting ideation notes and sketches. The first is a rendering of a walking taxi climbing up stairs to pick up a passenger in a wheelchair. The second shows a walking car traversing a snowy landscape. The third shows a walking car traversing a rocky landscape. The fourth shows a walking ambulance climbing down a cliff to a rescue site.</div>
 
 				<div class="bg opacity" style="background-image:url(assets/hyundai/post_it.jpg);" ></div>
 			
@@ -55,7 +59,8 @@
 				</div>
 		</section>
 		<section id="section3" class="section full fp-auto-height-responsive" >
-
+			<div class="accessibility-txt">The answer may be a car with legs.
+					Massive legs, with wheels for feet, and a design that borrows more from robotics than automobiles. media description: video depicts clips of designers at hyundai using software to prototype this vehicle</div>
 			<video style="position: absolute;z-index: 0;" class="fade-in" aria-describedby="video depicts clips of designers at hyundai using software to prototype this vehicle" class="" data-autoplay muted loop>
 				<source src="assets/hyundai/prototype0.mp4" type="video/mp4">
 			</video>
@@ -80,7 +85,7 @@
 				 	
 				 	<div style="grid-column-start: 6; top: 4vw;" class="interactive-block">
 					<img alt="this is an image of the walking car's leg bending upward to allow it to climb a block. The interaction allows the user to control the animation." class="interactive" id="lattice" src="assets/hyundai/leg_move/f1.png"><br>
-					 <input type="range" min="1" max="100" value="3" class="slider" id="lattice-slider" oninput="lattice(this.value)">
+					 <input tabindex="-1" type="range" min="1" max="100" value="3" class="slider" id="lattice-slider" oninput="lattice(this.value)">
 					 <span class="caption">Slide to move leg</span>
 				    </div>
 			 	</div>
@@ -156,7 +161,7 @@
 			<div class="grid">
 				<div style="grid-column-end: span 5;" class="interactive-block left">
 					<img alt="image shows michell truss. Interaction allows user to use the slider to rotate the truss part" class="interactive" id="lattice2" src="assets/hyundai/lattice/f48.png"><br>
-					 <input type="range" min="1" max="100" value="50" class="slider" id="lattice-slider" oninput="lattice2(this.value)">
+					 <input tabindex="-1" type="range" min="1" max="100" value="50" class="slider" id="lattice-slider" oninput="lattice2(this.value)">
 					 <span class="caption">Slide to rotate model<br><br></span>
 				</div>
 				
@@ -190,7 +195,7 @@
 			<div class="grid">
 				<div class="interactive-block left">
 					<img alt="image shows an exploded view of the car. Interaction allows user to shrink and expand the exploded view." class="interactive" id="lattice3" src="assets/hyundai/explode/f1.png"><br>
-					 <input type="range" min="1" max="100" value="3" class="slider" id="lattice-slider2" oninput="lattice3(this.value)">
+					 <input tabindex="-1" type="range" min="1" max="100" value="3" class="slider" id="lattice-slider2" oninput="lattice3(this.value)">
 					 <span class="caption">Slide to expand model</span>
 				</div>
 				<div style="top: -6vw;" class="text-block top-right slide-up">
