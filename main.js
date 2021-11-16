@@ -210,8 +210,6 @@ function checkKey(e) {
 			msg.text = text
 			window.speechSynthesis.cancel();
 			window.speechSynthesis.speak(msg);
-    	}else{
-    		document.getElementById("go-home").focus()
     	}
      
     }
