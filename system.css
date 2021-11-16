@@ -1138,7 +1138,7 @@ a:hover .go-arrow{
 }
 .card{
 	position: relative;
-	width: calc(25% - 2.08vw);
+	width: calc(24% - 2.08vw);
 	padding:1.04vw;
 }
 
