@@ -21,6 +21,7 @@
         		if(text){
 					text = text.innerHTML;
 					msg.text = text;
+					msg.rate = 1.5;
 					window.speechSynthesis.speak(msg);
 	        		//using index
         		}
@@ -185,6 +186,7 @@ document.getElementById("go-home").addEventListener('focus', (event) => {
 	window.speechSynthesis.cancel();
 	let msg = new SpeechSynthesisUtterance();
 	msg.text = firstText
+	msg.rate = 1.5;
 	window.speechSynthesis.speak(msg);
 	counter = counter + 1;
 	}else{
@@ -192,21 +194,23 @@ document.getElementById("go-home").addEventListener('focus', (event) => {
 	let text = "press up & down arrows to navigate story or press enter to go back to home page"
 	var msg = new SpeechSynthesisUtterance();
 	msg.text = text
+	msg.rate = 1.5;
 	window.speechSynthesis.speak(msg);
 
 	}
 })
-document.getElementById("hidden-next").addEventListener('focus', (event) => {
+// document.getElementById("hidden-next").addEventListener('focus', (event) => {
 
 	
-	window.speechSynthesis.cancel();
-	let text = "press up and down arrows to navigate story or press enter to go to next story"
-	var msg = new SpeechSynthesisUtterance();
-	msg.text = text
-	window.speechSynthesis.speak(msg);
+// 	window.speechSynthesis.cancel();
+// 	let text = "press up and down arrows to navigate story or press enter to go to next story"
+// 	var msg = new SpeechSynthesisUtterance();
+// 	msg.text = text
+// 	msg.rate = 1.5;
+// 	window.speechSynthesis.speak(msg);
 
 
-})
+// })
 
 // document.addEventListener('keydown', checkKey);
 
@@ -219,6 +223,7 @@ function checkKey(e) {
     		let text = "press enter to go back to home page or press up & down arrows to navigate story"
 			var msg = new SpeechSynthesisUtterance();
 			msg.text = text
+			msg.rate = 1.5;
 			window.speechSynthesis.cancel();
 			window.speechSynthesis.speak(msg);
     	}else{
@@ -231,34 +236,6 @@ function checkKey(e) {
 
 
 }
-// document.getElementById("fake-click").addEventListener("click", function(){
 
-// let firstText = document.getElementById("first-accessibility").innerHTML;
-// 	console.log(firstText)
-// window.speechSynthesis.cancel();
-// let msg = new SpeechSynthesisUtterance();
-// msg.text = firstText
-// window.speechSynthesis.speak(msg);
-
-// })
-
-// document.addEventListener('keydown', checkKey);
-
-// function checkKey(e) {
-
-//     e = e || window.event;
-//     console.log(e.keyCode)
-//     if (e.keyCode == '9') {
-//     	let firstText = document.getElementById("first-accessibility")
-//     	if(firstText)
-//         let home = document.getElementById("go-home")
-//         if(home){
-//         	home.focus()
-// 	        window.speechSynthesis.speak("press enter to go back to home page");
-// 	    }
-//     }
-
-
-// }
 
 
