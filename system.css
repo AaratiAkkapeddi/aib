@@ -466,17 +466,22 @@ input[type="range"]:hover {
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width:2.08vw;
-  height: 1.04vw;
+  width:3.08vw;
+  height: 2.0vw;
   top:-0.0vw;
   position: relative;
-  background: #fff;
+  background-image: url(assets/toggle.svg);
+  background-size:100%;
+  background-position: center;
+  background-repeat:  no-repeat;
   border:none;
   cursor: pointer;
   border-radius:0;
   outline:none;
 }
-
+input[type="range"]::-webkit-slider-thumb::after{
+	content: url(assets/toggle.svg);
+}
 /* Moz */
 
 input[type="range"]::-moz-range-thumb {
