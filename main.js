@@ -1,4 +1,4 @@
-
+let sound = true;
 
 		let showSecondP = false;
 
@@ -22,7 +22,10 @@
 					text = text.innerHTML;
 					msg.text = text;
 					msg.rate = 1.5;
-					window.speechSynthesis.speak(msg);
+					if(sound){
+						window.speechSynthesis.speak(msg);	
+					}
+					
 	        		//using index
         		}
         		
@@ -187,7 +190,10 @@ document.getElementById("go-home").addEventListener('focus', (event) => {
 	let msg = new SpeechSynthesisUtterance();
 	msg.text = firstText
 	msg.rate = 1.5;
-	window.speechSynthesis.speak(msg);
+	if(sound){
+		window.speechSynthesis.speak(msg);
+	}
+	
 	counter = counter + 1;
 	}else{
 		window.speechSynthesis.cancel();
@@ -195,7 +201,10 @@ document.getElementById("go-home").addEventListener('focus', (event) => {
 	var msg = new SpeechSynthesisUtterance();
 	msg.text = text
 	msg.rate = 1.5;
-	window.speechSynthesis.speak(msg);
+	if(sound){
+		window.speechSynthesis.speak(msg);
+	}
+	
 
 	}
 })
@@ -212,26 +221,15 @@ document.getElementById("go-home").addEventListener('focus', (event) => {
 
 // })
 
-// document.addEventListener('keydown', checkKey);
+document.addEventListener('keydown', checkKey);
 
 function checkKey(e) {
 
     e = e || window.event;
     console.log(e.keyCode)
-    if (e.keyCode == '9') {
-    	if(document.activeElement?.id == "go-home"){
-    		let text = "press enter to go back to home page or press up & down arrows to navigate story"
-			var msg = new SpeechSynthesisUtterance();
-			msg.text = text
-			msg.rate = 1.5;
-			window.speechSynthesis.cancel();
-			window.speechSynthesis.speak(msg);
-    	}else{
-    		e.preventDefault();
-    		document.getElementById("go-home").focus()
-   
-    	}
-     
+    if (e.keyCode == '88') {
+    	
+      sound = !sound;
     }
 
 
