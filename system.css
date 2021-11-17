@@ -1555,3 +1555,305 @@ section#section2.active .instagram:nth-child(11){
 	flex-direction: column;
 	justify-content: center;
 }
+
+/* CUSTOM STYLES */
+#hyundai-cs-1{
+	z-index:-1;position:absolute;background-image:url(assets/hyundai/terrain1.jpg);
+}
+#hyundai-cs-2{
+	grid-column-end:span 6;
+}
+#hyundai-cs-3{
+	background-image:url(assets/hyundai/post_it.jpg);
+}
+#hyundai-cs-4{
+	position: absolute;z-index: 0;
+}
+#hyundai-cs-5{
+	grid-column-end: span 5;top: -1.5vw;
+}
+#hyundai-cs-6{
+	grid-column-start: 6; top: 4vw;
+}
+#hyundai-cs-7{
+	grid-column-end: 6;
+}
+#hyundai-cs-8{
+	grid-column-start: 1;align-self:end;grid-column-end: span 12;width:100%;
+}
+#hyundai-cs-9{
+	margin-left: 3.9vw;
+}
+#hyundai-cs-10{
+	grid-column-end: span 5;align-self: start;
+}
+#hyundai-cs-11{
+	padding-left:0vw;margin-left:3.9vw;grid-column-end: span 6;align-self: start;
+}
+
+#hyundai-cs-12{
+	position: relative;width:85%;top:-5vw;grid-column-end: span 7;
+}
+#hyundai-cs-13{
+	position: absolute;top:0;left:0;width:100vw;
+}
+#hyundai-cs-14{
+	grid-column-end: span 6;background:transparent;align-self: end;
+}
+#hyundai-cs-15{
+	grid-column-end: span 5;
+}
+#hyundai-cs-16{
+	grid-column-end: span 5;grid-column-start: 7;
+}
+#hyundai-cs-17{
+	width: 100%;display: block;margin: 0 auto; align-self: center;position:relative;top:2.2vw
+}
+#hyundai-cs-18{
+	position: relative; top:5vw;
+}
+#hyundai-cs-19{
+	padding-left:0vw;grid-column-end: span 8;align-self: start;
+}
+#hyundai-cs-20{
+	z-index:0;position: absolute;
+}
+#hyundai-cs-21{
+	z-index: 1;position: relative;
+}
+#hyundai-cs-22{
+	grid-column-end: 8;
+}
+#hyundai-cs-23{
+	top: -6vw;
+}
+#hyundai-cs-24{
+	z-index: 1;position: relative;
+}
+#hyundai-cs-25{
+	grid-column-end: 8;
+}
+#hyundai-cs-26{
+	grid-column-start: 1;align-self:center;grid-column-end: span 6;
+}
+#hyundai-cs-27{
+	top:-1.5vw;
+}
+
+#jpl-cs-1{
+	z-index:0;position: absolute;
+}
+
+#jpl-cs-2{
+	grid-column-end:span 6;align-self: start;
+}
+#jpl-cs-3{
+	z-index:0;position: absolute;
+}
+#jpl-cs-4{
+	z-index: 2;position: relative;
+}
+#jpl-cs-5{
+	z-index:0;position: absolute;
+}
+#jpl-cs-6{
+	z-index:0;position: absolute;
+}
+#jpl-cs-7{
+	grid-column-end:span 6;
+}
+#jpl-cs-8{
+	grid-column-end:span 2; grid-column-start: 1; text-align: center;
+}
+#jpl-cs-9{
+	grid-column-start: 1;grid-column-end: span 12;
+}
+#jpl-cs-10{
+	position:relative;top:-3vw;grid-column-end:span 4; grid-column-start: 1; text-align: center;
+}
+#jpl-cs-11{
+	position:relative;top:-3vw;grid-column-end:span 4; grid-column-start: 5; text-align: center;
+}
+#jpl-cs-12{
+	position:relative;top:-3vw;grid-column-end:span 4; grid-column-start: 9; text-align: center;
+}
+#jpl-cs-13{
+	grid-column-end:span 6;text-align:left;
+}
+#jpl-cs-14{
+	z-index:0;position: absolute;
+}
+#jpl-cs-15{
+	top: -5.7vw;
+}
+#jpl-cs-16{
+	z-index:0;position: absolute;
+}
+#jpl-cs-17{
+	z-index:-1;position:absolute;background-image:url(assets/jpl/background.png);
+}
+
+#jpl-cs-18{
+	grid-column-end: span 6;
+}
+#jpl-cs-19{
+	grid-column-end:span 6;
+}
+#jpl-cs-20{
+	z-index:0;position: absolute;
+}
+#jpl-cs-21{
+	top: -9.4vw;
+}
+#jpl-cs-22{
+	grid-column-start: 1;align-self:center;grid-column-end: span 6;
+}
+#jpl-cs-23{
+	top:-5.2vw;
+}
+#jpl-cs-24{
+	width:95%;
+}
+#starck-cs-1{
+	position:relative;
+}
+#starck-cs-2{
+	background-image:url(assets/starck/ghost.jpg);background-repeat: no-repeat; background-size:cover;
+}
+#starck-cs-3{
+	background-size:100%;background-repeat:no-repeat;background-image:url('assets/starck/starck_brain.jpg');background-color:transparent;height: 24vw;background-position: 0 82%;grid-column-end: span 8; grid-column-start: 3;align-self:center;
+}
+#starck-cs-4{
+	color:black;padding:3.00vw 1.4vw 0 1.04vw;width:calc(47% - 2.08vw);display:inline-block;vertical-align:center;margin:0;float:right;
+}
+#starck-cs-5{
+	background-image:url(assets/starck/starck_grey.jpg);
+}
+#starck-cs-6{
+	grid-column-start: 1;color:white; grid-column-end: span 7;
+}
+#starck-cs-7{
+	z-index:0;position: absolute;width:100vw;top:-5vw;left:0;
+}
+#starck-cs-8{
+	position:relative;grid-column-end: span 9;
+}
+#starck-cs-9{
+	z-index:0;position: absolute;width:100vw;top:-5vw;left:0;
+}
+#starck-cs-10{
+	position:relative;
+}
+#starck-cs-11{
+	z-index:0;position: absolute;width:100vw;top:-5vw;left:0;
+}
+#starck-cs-12{
+	position:relative;grid-column-end: span 8;
+}
+#starck-cs-13{
+	position:relative;top:-9.4vw;
+}
+#starck-cs-14{
+	z-index:0;position: absolute;
+}
+#starck-cs-15{
+	z-index: 1;position: relative;
+}
+#starck-cs-16{
+	position:relative;align-self: end;grid-column-end: span 10;grid-column-start: 1;
+}
+#starck-cs-17{
+	z-index:0;position: absolute;
+}
+#starck-cs-18{
+	z-index: 1;position: relative;
+}
+#starck-cs-19{
+	grid-column-end: 12;position:relative;
+}
+#starck-cs-20{
+	z-index:0;position: absolute;
+}
+#starck-cs-21{
+	z-index: 1;position: relative;
+}
+#starck-cs-22{
+	grid-column-end: 12;position:relative;
+}
+#starck-cs-23{
+	position:relative;grid-column-end:span 7; top:-11.4vw;
+}
+#starck-cs-24{
+	position:relative;top:-1.2vw;
+}
+#starck-cs-25{
+	z-index:0;position: absolute;
+}
+#starck-cs-26{
+	z-index: 1;position: relative;
+}
+#starck-cs-27{
+	grid-column-end: 12;position:relative;width:98%;
+}
+#starck-cs-28{
+	grid-column-start: 1;align-self:center;grid-column-end: span 6;
+}
+#starck-cs-29{
+	position:relative;top:-5.3vw;
+}
+#pav-cs-1{
+	z-index:0;position: absolute;
+}
+#pav-cs-2{
+	grid-column-end:span 6; width:calc(850px - (2 * 1.04vw));
+}
+#pav-cs-3{
+	color:black;
+}
+.pavilion #para-video{
+	z-index:0;position: absolute;
+}
+#pav-cs-4{
+	grid-column-end:span 6;background:transparent;
+}
+#pav-cs-5{
+	top: -12.4vw;
+}
+#pav-cs-6{
+	z-index:0;position: absolute;
+}
+#pav-cs-7{
+	grid-column-end:span 8;
+}
+#pav-cs-8{
+	top: -12.5vw;
+}
+#pav-cs-9{
+	z-index:0;position: absolute;width: 100vw;top: 0vw;left: 0vw;
+}
+#pav-cs-10{
+	align-self: baseline; box-shadow:5px 5px 10px rgba(0,0,0,0.5);
+}
+#pav-cs-11{
+	top: 0vw;z-index: 2;position: relative;align-self: start;color:white;
+}
+#pav-cs-12{
+	z-index:0;position: absolute;width: 109vw;top: -4vw;left: -4.7vw;
+}
+#pav-cs-13{
+	align-self: baseline; box-shadow:5px 5px 10px rgba(0,0,0,0.5);
+}
+#pav-cs-14{
+	top: -0.2vw;z-index: 2;position: relative;align-self: start;
+}
+#pav-cs-15{
+	z-index:0;position: absolute;
+}
+#pav-cs-16{
+	z-index: 1;position: relative;
+}
+#pav-cs-17{
+	position:relative;align-self: end;grid-column-end: span 6;grid-column-start: 1;
+}
+
+
