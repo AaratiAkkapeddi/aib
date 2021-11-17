@@ -196,8 +196,19 @@ document.getElementById("go-home").addEventListener('focus', (event) => {
 
 	}
 })
+document.getElementById("hidden-next").addEventListener('focus', (event) => {
 
-document.addEventListener('keydown', checkKey);
+	
+	window.speechSynthesis.cancel();
+	let text = "press up and down arrows to navigate story or press enter to go to next story"
+	var msg = new SpeechSynthesisUtterance();
+	msg.text = text
+	window.speechSynthesis.speak(msg);
+
+
+})
+
+// document.addEventListener('keydown', checkKey);
 
 function checkKey(e) {
 

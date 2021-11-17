@@ -17,7 +17,10 @@ body{
 .accessibility-txt{
 	display: none;
 }
-
+#hidden-next{
+    opacity: 0;
+    pointer-events: none;
+}
 /*
  system
  4.165
