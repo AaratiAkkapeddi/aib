@@ -234,14 +234,29 @@ function checkKey(e) {
     if(e.keyCode == '9'){
     	e.preventDefault()
     	document.getElementById("go-home").focus()
-    		window.speechSynthesis.cancel();
-			let text = "press up & down arrows to navigate story or press enter to go back to home page"
-			var msg = new SpeechSynthesisUtterance();
-			msg.text = text
-			msg.rate = 1.5;
-			if(sound){
-				window.speechSynthesis.speak(msg);
-			}
+ //    	if(counter < 1){
+ //    		console.log(counter)
+	// 		let firstText = document.getElementById("first-accessibility")?.innerHTML || "";
+	// 		firstText = firstText + " press enter to go back to home page or press up & down arrows to navigate story"
+	// 		window.speechSynthesis.cancel();
+	// 		let msg = new SpeechSynthesisUtterance();
+	// 		msg.text = firstText
+	// 		msg.rate = 1.5;
+	// 		if(sound){
+	// 			window.speechSynthesis.speak(msg);
+	// 		}
+			
+	// counter = counter + 1;
+	// }else{
+ //    		window.speechSynthesis.cancel();
+	// 		let text = "press up & down arrows to navigate story or press enter to go back to home page"
+	// 		var msg = new SpeechSynthesisUtterance();
+	// 		msg.text = text
+	// 		msg.rate = 1.5;
+	// 		if(sound){
+	// 			window.speechSynthesis.speak(msg);
+	// 		}
+	// 	}
     }
 
 

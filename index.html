@@ -121,6 +121,21 @@ document.getElementById("go-hyundai").addEventListener('focus', (event) => {
 	window.speechSynthesis.speak(msg);
 })
 
+// document.getElementById("go-hyundai").addEventListener('click', (event) => {
+// 	event.preventDefault()
+// 	window.speechSynthesis.cancel();
+// 	let text = "CLICK blah blah blah blah"
+// 	var msg = new SpeechSynthesisUtterance();
+// 	msg.text = text
+// 	msg.rate = 1.5;
+// 	window.speechSynthesis.speak(msg);
+// 	let href = event.target.href
+// 	setTimeout(function(){
+// 		window.location.href = event.target.href
+// 	},500)
+	
+// })
+
 document.getElementById("go-jpl").addEventListener('focus', (event) => {
 	window.speechSynthesis.cancel();
 	let text = "How can we look for life on distant planets? Press enter to explore this story."
