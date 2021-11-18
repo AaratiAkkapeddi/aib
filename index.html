@@ -68,6 +68,12 @@
 
 document.querySelector("#credits-trigger").addEventListener("click",function(){
 	document.querySelector(".credits-modal").classList.add("open");
+	window.speechSynthesis.cancel();
+	let text = "Autodesk:, Creative Direction: Keith Chamberlain, 3d Artist: Dennis Martin, Writer: Donald Bell, Producer: Sabrina Humphreys, Interactive Designer/Developer: Arthy Akkapeddi, Hyundai Elevate: Images courtesy of Hyundai Motor Group, AI Chair: Images courtesy of Kartell, Images courtesy of Philippe Starck"
+	var msg = new SpeechSynthesisUtterance();
+	msg.text = text
+	msg.rate = 1.5;
+	window.speechSynthesis.speak(msg);
 
 
 })
@@ -164,6 +170,23 @@ document.getElementById("go-pavilion").addEventListener('focus', (event) => {
 document.getElementById("intro-h1").addEventListener('focus', (event) => {
 	window.speechSynthesis.cancel();
 	let text = "Learn how designers collaborate with AI"
+	var msg = new SpeechSynthesisUtterance();
+	msg.text = text
+	msg.rate = 1.5;
+	window.speechSynthesis.speak(msg);
+})
+
+document.getElementById("credits-trigger").addEventListener('focus', (event) => {
+	window.speechSynthesis.cancel();
+	let text = "Press enter to hear credits"
+	var msg = new SpeechSynthesisUtterance();
+	msg.text = text
+	msg.rate = 1.5;
+	window.speechSynthesis.speak(msg);
+})
+document.getElementById("close-credits").addEventListener('focus', (event) => {
+	window.speechSynthesis.cancel();
+	let text = "Press enter to close credits"
 	var msg = new SpeechSynthesisUtterance();
 	msg.text = text
 	msg.rate = 1.5;

@@ -1,5 +1,5 @@
 let sound = true;
-
+let counter = 0;
 		let showSecondP = false;
 
 		let myFullpage = new fullpage('#fullpage', {
@@ -12,14 +12,20 @@ let sound = true;
 			autoScrolling: true,
 			touchSensitivity: 5,
         	afterLoad: function(origin, destination, direction){
-        		let counter = document.getElementById("page").firstChild
-        		counter.nodeValue = destination.index + 1;
+        		let counter2 = document.getElementById("page").firstChild
+        		counter2.nodeValue = destination.index + 1;
         		let loadedSection = this;
         		window.speechSynthesis.cancel();
         		var msg = new SpeechSynthesisUtterance();
         		let text = document.querySelector("#section"+(destination.index + 1)+" .accessibility-txt");
         		if(text){
+
 					text = text.innerHTML;
+					if(counter < 1 && destination.index == 1){
+						let firstText = document.getElementById("first-accessibility")?.innerHTML || "";
+						text = firstText + text;
+						counter = counter + 1;
+					}
 					msg.text = text;
 					msg.rate = 1.5;
 					if(sound){
@@ -179,7 +185,7 @@ window.addEventListener("load", function(){
 	
 	
 })
-let counter = 0;
+
 
 document.getElementById("go-home").addEventListener('focus', (event) => {
 	window.speechSynthesis.cancel();
