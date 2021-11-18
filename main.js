@@ -234,6 +234,11 @@ function checkKey(e) {
 
 
 }
+function awayBackCallback(){
+window.location.href="index.html"
+}
 
-
-
+var idle = new Idle({
+				onAway: awayBackCallback,
+				awayTimeout: (10000 * 60) //away with 5 seconds of inactivity
+			}).start();
