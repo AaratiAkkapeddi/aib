@@ -231,6 +231,18 @@ function checkKey(e) {
       window.speechSynthesis.cancel();
       sound = !sound;
     }
+    if(e.keyCode == '9'){
+    	e.preventDefault()
+    	document.getElementById("go-home").focus()
+    		window.speechSynthesis.cancel();
+			let text = "press up & down arrows to navigate story or press enter to go back to home page"
+			var msg = new SpeechSynthesisUtterance();
+			msg.text = text
+			msg.rate = 1.5;
+			if(sound){
+				window.speechSynthesis.speak(msg);
+			}
+    }
 
 
 }
