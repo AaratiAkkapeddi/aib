@@ -29,7 +29,7 @@ let counter = 0;
 					msg.text = text;
 					msg.rate = 1.5;
 					if(sound){
-						window.speechSynthesis.speak(msg);	
+// 						window.speechSynthesis.speak(msg);	
 					}
 					
 	        		//using index
