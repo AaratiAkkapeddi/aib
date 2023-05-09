@@ -212,7 +212,7 @@ document.getElementById("go-home").addEventListener('focus', (event) => {
 // 	}
 	
 
-	}
+// 	}
 })
 // document.getElementById("hidden-next").addEventListener('focus', (event) => {
 
